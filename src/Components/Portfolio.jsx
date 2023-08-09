@@ -31,16 +31,16 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "My blogposts on IoT and Embedded Systems",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "Collection of various blogposts I have written on Internet of Things and Embedded Systems.",
+    url: "https://samueladesola.medium.com/",
   },
   {
-    title: "Web Development for Beginners",
+    title: "Roles Academy Youtube Channel",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "Creating academic contents on my Youtube channel. The contents are focused on College Mathematics, Physics and Internet of Things",
+    url: "https://www.youtube.com/@RolesAcademy",
   },
   {
     title: "My Resume Site",
@@ -49,10 +49,10 @@ const projectList = [
     url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "My hardware Projects Repository",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "Contains various work I have done on Electronics and TinyML.",
+    url: "https://github.com/adesolasamuel",
   },
 ];
 
