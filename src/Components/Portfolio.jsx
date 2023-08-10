@@ -43,9 +43,9 @@ const projectList = [
     url: "https://www.youtube.com/@RolesAcademy",
   },
   {
-    title: "My Resume Site",
+    title: "Download Resume",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
+      "Download a copy of my Resume.",
     url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
   },
   {
@@ -53,6 +53,12 @@ const projectList = [
     description:
       "Contains various work I have done on Electronics and TinyML.",
     url: "https://github.com/adesolasamuel",
+  },
+  {
+    title: "Academic Publications",
+    description:
+      "Contains various Papers I have presented and Researches I have done on Electronics and TinyML.",
+    url: "https://www.researchgate.net/profile/Samuel-Adesola",
   },
 ];
 
