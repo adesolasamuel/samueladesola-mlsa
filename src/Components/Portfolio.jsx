@@ -19,7 +19,7 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/portfoliopic.jpg";
 
 const imageAltText = "desktop with books and laptop";
 
@@ -71,7 +71,7 @@ const Portfolio = () => {
           <img
             src={image}
             style={{
-              height: "90%",
+              height: "120%",
               width: "100%",
               objectFit: "cover",
               animation: "1s ease-out 0s 1 slideIn",
