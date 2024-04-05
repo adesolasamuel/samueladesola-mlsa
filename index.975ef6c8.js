@@ -28776,7 +28776,7 @@ const imageAltText = "desktop with books and laptop";
     {
         title: "Download Resume",
         description: "Download a copy of my Resume.",
-        url: "https://samuelfiles.blob.core.windows.net/myfiles/Samuel Adesola Resume.pdf"
+        url: "https://samueladesolamlsa.blob.core.windows.net/mlstuffs/Samuel Adesola Resume.pdf"
     },
     {
         title: "My hardware Projects Repository",
@@ -28901,7 +28901,7 @@ $RefreshReg$(_c, "Portfolio");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../images/portfoliopic.jpg":"i9Kl9"}],"i9Kl9":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../images/portfoliopic.jpg":"i9Kl9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"i9Kl9":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "portfoliopic.4fe9df88.jpg" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"lW6qc":[function() {},{}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire6158")
