@@ -46,7 +46,7 @@ const projectList = [
     title: "Download Resume",
     description:
       "Download a copy of my Resume.",
-    url: "https://samuelfiles.blob.core.windows.net/myfiles/Samuel Adesola Resume.pdf",
+    url: "https://samueladesolamlsa.blob.core.windows.net/mlstuffs/Samuel Adesola Resume.pdf",
   },
   {
     title: "My hardware Projects Repository",
