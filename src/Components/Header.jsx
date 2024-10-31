@@ -5,8 +5,11 @@
  * user scrolls so that they can constantly reach any part of your page.
  */
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
+  const location = useLocation();
+  const isBlogPage = location.pathname === "/blog";
   return (
     <div
       style={{
@@ -21,9 +24,10 @@ const Header = () => {
         zIndex: 10,
       }}
     >
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
+      <Link to="/">Home</Link>
+      {!isBlogPage && <a href="#about">About</a>}
+      {!isBlogPage && <a href="#portfolio">Portfolio</a>}
+      {!isBlogPage && <Link to="blog">Blog</Link>}
       <a href="#footer">Contact</a>
     </div>
   );

@@ -5,8 +5,10 @@
  */
 
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import About from "./Components/About";
+import Blog from "./Components/Blog"; // Import Blog component
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
@@ -40,13 +42,41 @@ const secondaryColor = "#D2F1E4";
 
 const App = () => {
   return (
-    <div id="main">
-      <Header />
-      <Home name={siteProps.name} title={siteProps.title} />
-      <About />
-      <Portfolio />
-      <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
-    </div>
+    <Router>
+      <div id="main">
+        <Header />
+        <div className="content">
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <Home name={siteProps.name} title={siteProps.title} />
+                  <About />
+                  <Portfolio />
+                  <Footer
+                    {...siteProps}
+                    primaryColor={primaryColor}
+                    secondaryColor={secondaryColor}
+                  />
+                </>
+              }
+            />
+            <Route
+              path="/blog"
+              element={
+                <Blog
+                  siteProps={siteProps}
+                  primaryColor={primaryColor}
+                  secondaryColor={secondaryColor}
+                />
+              }
+            />{" "}
+            {/* Added Blog route with props */}
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 };
 
