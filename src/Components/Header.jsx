@@ -22,6 +22,7 @@ const Header = () => {
         top: 0,
         width: "100%",
         zIndex: 10,
+        flexWrap: "wrap",
       }}
     >
       <Link to="/">Home</Link>
