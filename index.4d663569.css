@@ -11,8 +11,13 @@ html, body {
 
 div#main {
   width: 100vw;
+  min-height: 100vh;
   flex-direction: column;
   display: flex;
+}
+
+.content {
+  flex: 1;
 }
 
 section {
