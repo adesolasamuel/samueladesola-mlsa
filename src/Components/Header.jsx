@@ -11,25 +11,25 @@ const Header = () => {
   const location = useLocation();
   const isBlogPage = location.pathname === "/blog";
   return (
-    <div
-      style={{
-        position: "fixed",
-        display: "flex",
-        justifyContent: "center",
-        gap: "2rem",
-        background: "rgba(255,255,255,0.75)",
-        padding: "1rem",
-        top: 0,
-        width: "100%",
-        zIndex: 10,
-        flexWrap: "wrap",
-      }}
-    >
-      <Link to="/">Home</Link>
-      {!isBlogPage && <a href="#about">About</a>}
-      {!isBlogPage && <a href="#portfolio">Portfolio</a>}
-      {!isBlogPage && <Link to="blog">Blog</Link>}
-      <a href="#footer">Contact</a>
+    <div className="header">
+      <input type="checkbox" id="menuToggle" />
+      <div>
+        <Link to={"/"} className="logo">
+          SA
+        </Link>
+        <div className="navLinks">
+          <Link to="/">Home</Link>
+          {!isBlogPage && <a href="#about">About</a>}
+          {!isBlogPage && <a href="#portfolio">Portfolio</a>}
+          {!isBlogPage && <Link to="blog">Blog</Link>}
+          <a href="#footer">Contact</a>
+        </div>
+        <label className="menuIcon" htmlFor="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
     </div>
   );
 };

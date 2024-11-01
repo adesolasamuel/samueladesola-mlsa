@@ -44,14 +44,12 @@ const projectList = [
   },
   {
     title: "Download Resume",
-    description:
-      "Download a copy of my Resume.",
+    description: "Download a copy of my Resume.",
     url: "https://samueladesolamlsa.blob.core.windows.net/mlstuffs/Samuel Adesola Resume.pdf",
   },
   {
     title: "My hardware Projects Repository",
-    description:
-      "Contains various work I have done on Electronics and TinyML.",
+    description: "Contains various work I have done on Electronics and TinyML.",
     url: "https://github.com/adesolasamuel",
   },
   {
@@ -66,18 +64,9 @@ const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
       <h2 style={{ textAlign: "center" }}>Portfolio</h2>
-      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
-          <img
-            src={image}
-            style={{
-              height: "120%",
-              width: "100%",
-              objectFit: "cover",
-              animation: "1s ease-out 0s 1 slideIn",
-            }}
-            alt={imageAltText}
-          />
+      <div className="portfolioWrapper">
+        <div>
+          <img src={image} alt={imageAltText} />
         </div>
         <div className="container">
           {projectList.map((project) => (
