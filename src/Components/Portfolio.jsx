@@ -31,10 +31,10 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "My blogposts on IoT and Embedded Systems",
+    title: "My Academic Curriculum Vitae",
     description:
-      "Collection of various blogposts I have written on Internet of Things and Embedded Systems.",
-    url: "https://samueladesola.medium.com/",
+      "A detailed overview of my academic journey, including my education, research, and professional experiences.",
+    url: "https://drive.google.com/file/d/1HaK7cV91SwZETy35INwU56j8XENZZChi/view?usp=sharing",
   },
   {
     title: "Roles Academy Youtube Channel",
@@ -56,7 +56,13 @@ const projectList = [
     title: "Academic Publications",
     description:
       "Contains various Papers I have presented and Researches I have done on Electronics and TinyML.",
-    url: "https://www.researchgate.net/profile/Samuel-Adesola",
+    url: "https://scholar.google.com/citations?hl=en&user=sruE6z8AAAAJ",
+  },
+  {
+    title: "My blogposts on IoT and Embedded Systems",
+    description:
+      "Collection of various blogposts I have written on Internet of Things and Embedded Systems.",
+    url: "https://samueladesola.medium.com/",
   },
 ];
 
