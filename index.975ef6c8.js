@@ -34716,7 +34716,7 @@ const Blog = ()=>{
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: "Welcome to my blog! More posts coming soon."
+                            children: "Hello Welcome to my blog! More posts coming soon."
                         }, void 0, false, {
                             fileName: "src/Components/Blog.jsx",
                             lineNumber: 25,
@@ -36088,9 +36088,9 @@ const imageAltText = "desktop with books and laptop";
  * links section. Below is a sample, update to reflect links you'd like to highlight.
  */ const projectList = [
     {
-        title: "My blogposts on IoT and Embedded Systems",
-        description: "Collection of various blogposts I have written on Internet of Things and Embedded Systems.",
-        url: "https://samueladesola.medium.com/"
+        title: "My Academic Curriculum Vitae",
+        description: "A detailed overview of my academic journey, including my education, research, and professional experiences.",
+        url: "https://drive.google.com/file/d/1HaK7cV91SwZETy35INwU56j8XENZZChi/view?usp=sharing"
     },
     {
         title: "Roles Academy Youtube Channel",
@@ -36110,7 +36110,12 @@ const imageAltText = "desktop with books and laptop";
     {
         title: "Academic Publications",
         description: "Contains various Papers I have presented and Researches I have done on Electronics and TinyML.",
-        url: "https://www.researchgate.net/profile/Samuel-Adesola"
+        url: "https://scholar.google.com/citations?hl=en&user=sruE6z8AAAAJ"
+    },
+    {
+        title: "My blogposts on IoT and Embedded Systems",
+        description: "Collection of various blogposts I have written on Internet of Things and Embedded Systems.",
+        url: "https://samueladesola.medium.com/"
     }, 
 ];
 const Portfolio = ()=>{
@@ -36125,7 +36130,7 @@ const Portfolio = ()=>{
                 children: "Portfolio"
             }, void 0, false, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 66,
+                lineNumber: 72,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36137,12 +36142,12 @@ const Portfolio = ()=>{
                             alt: imageAltText
                         }, void 0, false, {
                             fileName: "src/Components/Portfolio.jsx",
-                            lineNumber: 69,
+                            lineNumber: 75,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 68,
+                        lineNumber: 74,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36161,12 +36166,12 @@ const Portfolio = ()=>{
                                             children: project.title
                                         }, void 0, false, {
                                             fileName: "src/Components/Portfolio.jsx",
-                                            lineNumber: 75,
+                                            lineNumber: 81,
                                             columnNumber: 17
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 74,
+                                        lineNumber: 80,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -36174,30 +36179,30 @@ const Portfolio = ()=>{
                                         children: project.description
                                     }, void 0, false, {
                                         fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 77,
+                                        lineNumber: 83,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, project.title, true, {
                                 fileName: "src/Components/Portfolio.jsx",
-                                lineNumber: 73,
+                                lineNumber: 79,
                                 columnNumber: 13
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 71,
+                        lineNumber: 77,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 67,
+                lineNumber: 73,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Portfolio.jsx",
-        lineNumber: 65,
+        lineNumber: 71,
         columnNumber: 5
     }, undefined);
 };
