@@ -22,7 +22,7 @@ const Blog = () => {
       <div className="content">
         <section className="light" id="blog">
           <h2>Blog</h2>
-          <p>Welcome to my blog! More posts coming soon.</p>
+          <p>Hello Welcome to my blog! More posts coming soon.</p>
         </section>
       </div>
       <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
