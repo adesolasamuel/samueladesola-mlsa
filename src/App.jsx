@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import About from "./Components/About";
 import Blog from "./Components/Blog"; // Import Blog component
+import BlogPost from "./Components/BlogPost"; // Import BlogPost component
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
@@ -71,8 +72,11 @@ const App = () => {
                   secondaryColor={secondaryColor}
                 />
               }
-            />{" "}
-            {/* Added Blog route with props */}
+            />
+            <Route
+              path="/blog/:id"
+              element={<BlogPost />}
+            />
           </Routes>
         </div>
       </div>
