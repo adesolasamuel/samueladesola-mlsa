@@ -34716,7 +34716,7 @@ const Blog = ()=>{
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: "Hello Welcome to my blog! More posts coming soon."
+                            children: "Hello Welcome to my bkkklog! More posts coming soon."
                         }, void 0, false, {
                             fileName: "src/Components/Blog.jsx",
                             lineNumber: 25,
