@@ -27072,6 +27072,8 @@ var _about = require("./Components/About");
 var _aboutDefault = parcelHelpers.interopDefault(_about);
 var _blog = require("./Components/Blog"); // Import Blog component
 var _blogDefault = parcelHelpers.interopDefault(_blog);
+var _blogPost = require("./Components/BlogPost"); // Import BlogPost component
+var _blogPostDefault = parcelHelpers.interopDefault(_blogPost);
 var _footer = require("./Components/Footer");
 var _footerDefault = parcelHelpers.interopDefault(_footer);
 var _header = require("./Components/Header");
@@ -27109,7 +27111,7 @@ const App = ()=>{
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 47,
+                    lineNumber: 48,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27135,7 +27137,7 @@ const App = ()=>{
                                 }, void 0, true)
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 50,
+                                lineNumber: 51,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27147,30 +27149,37 @@ const App = ()=>{
                                 }, void 0, false, void 0, void 0)
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 65,
+                                lineNumber: 66,
                                 columnNumber: 13
                             }, undefined),
-                            " "
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                                path: "/blog/:id",
+                                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _blogPostDefault.default), {}, void 0, false, void 0, void 0)
+                            }, void 0, false, {
+                                fileName: "src/App.jsx",
+                                lineNumber: 76,
+                                columnNumber: 13
+                            }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 49,
+                        lineNumber: 50,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 48,
+                    lineNumber: 49,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/App.jsx",
-            lineNumber: 46,
+            lineNumber: 47,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.jsx",
-        lineNumber: 45,
+        lineNumber: 46,
         columnNumber: 5
     }, undefined);
 };
@@ -27184,7 +27193,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./Components/About":"kouZu","./Components/Blog":"cCIoR","./Components/Footer":"7GWgX","./Components/Header":"9Dt2F","./Components/Home":"jIEVO","./Components/Portfolio":"lCaEt","./styles.css":"lW6qc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./Components/About":"kouZu","./Components/Blog":"cCIoR","./Components/Footer":"7GWgX","./Components/Header":"9Dt2F","./Components/Home":"jIEVO","./Components/Portfolio":"lCaEt","./styles.css":"lW6qc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Components/BlogPost":"h6Pqe"}],"9xmpe":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "AbortedDeferredError", ()=>(0, _reactRouter.AbortedDeferredError));
@@ -34685,6 +34694,9 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _footer = require("./Footer"); // Import Footer component
 var _footerDefault = parcelHelpers.interopDefault(_footer);
+var _blogCard = require("./BlogCard"); // Import BlogCard component
+var _blogCardDefault = parcelHelpers.interopDefault(_blogCard);
+var _blogData = require("../data/blogData"); // Import blog data
 const siteProps = {
     name: "Samuel Adesola",
     title: "Embedded Systems and Internet of Things Engineer",
@@ -34707,30 +34719,191 @@ const Blog = ()=>{
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
                     className: "light",
                     id: "blog",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                            children: "Blog"
-                        }, void 0, false, {
-                            fileName: "src/Components/Blog.jsx",
-                            lineNumber: 24,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: "Hello Welcome to my bkkklog! More posts coming soon."
-                        }, void 0, false, {
-                            fileName: "src/Components/Blog.jsx",
-                            lineNumber: 25,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
+                    style: {
+                        paddingTop: "6rem",
+                        padding: "6rem 2rem 2rem",
+                        minHeight: "calc(100vh - 6rem)",
+                        backgroundColor: "#f8fafc"
+                    },
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        style: {
+                            maxWidth: "900px",
+                            width: "100%",
+                            margin: "0 auto"
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    textAlign: "center",
+                                    marginBottom: "3rem"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                        style: {
+                                            fontSize: "2.5rem",
+                                            marginBottom: "1rem",
+                                            color: primaryColor,
+                                            fontWeight: "700"
+                                        },
+                                        children: "Blog"
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Blog.jsx",
+                                        lineNumber: 34,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        style: {
+                                            fontSize: "1.2rem",
+                                            lineHeight: "1.6",
+                                            color: "#6b7280",
+                                            maxWidth: "600px",
+                                            margin: "0 auto"
+                                        },
+                                        children: "Insights and thoughts on embedded systems, IoT development, and the future of connected technology."
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Blog.jsx",
+                                        lineNumber: 42,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/Blog.jsx",
+                                lineNumber: 33,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    display: "grid",
+                                    gap: "2rem",
+                                    gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))"
+                                },
+                                children: (0, _blogData.blogPosts).map((post)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _blogCardDefault.default), {
+                                        id: post.id,
+                                        title: post.title,
+                                        excerpt: post.excerpt,
+                                        date: post.date,
+                                        readTime: post.readTime,
+                                        mediumUrl: post.mediumUrl,
+                                        tags: post.tags,
+                                        coverImage: post.coverImage
+                                    }, post.id, false, {
+                                        fileName: "src/Components/Blog.jsx",
+                                        lineNumber: 60,
+                                        columnNumber: 17
+                                    }, undefined))
+                            }, void 0, false, {
+                                fileName: "src/Components/Blog.jsx",
+                                lineNumber: 54,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                style: {
+                                    textAlign: "center",
+                                    marginTop: "3rem",
+                                    padding: "2rem",
+                                    backgroundColor: "white",
+                                    borderRadius: "12px",
+                                    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                        style: {
+                                            color: primaryColor,
+                                            marginBottom: "1rem",
+                                            fontSize: "1.5rem"
+                                        },
+                                        children: "Want to read more?"
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Blog.jsx",
+                                        lineNumber: 83,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        style: {
+                                            color: "#6b7280",
+                                            marginBottom: "1.5rem",
+                                            fontSize: "1rem"
+                                        },
+                                        children: "Follow me on Medium for more articles on embedded systems and IoT development."
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Blog.jsx",
+                                        lineNumber: 90,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                        href: `https://medium.com/@${siteProps.medium}`,
+                                        target: "_blank",
+                                        rel: "noopener noreferrer",
+                                        style: {
+                                            display: "inline-flex",
+                                            alignItems: "center",
+                                            padding: "0.75rem 2rem",
+                                            backgroundColor: primaryColor,
+                                            color: "white",
+                                            textDecoration: "none",
+                                            borderRadius: "8px",
+                                            fontSize: "1rem",
+                                            fontWeight: "500",
+                                            transition: "all 0.3s ease"
+                                        },
+                                        onMouseEnter: (e)=>{
+                                            e.currentTarget.style.backgroundColor = "#3d4660";
+                                            e.currentTarget.style.transform = "translateY(-2px)";
+                                        },
+                                        onMouseLeave: (e)=>{
+                                            e.currentTarget.style.backgroundColor = primaryColor;
+                                            e.currentTarget.style.transform = "translateY(0)";
+                                        },
+                                        children: [
+                                            "Follow on Medium",
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                width: "20",
+                                                height: "20",
+                                                viewBox: "0 0 24 24",
+                                                fill: "none",
+                                                stroke: "currentColor",
+                                                strokeWidth: "2",
+                                                style: {
+                                                    marginLeft: "0.5rem"
+                                                },
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                    d: "M7 17L17 7M17 7H7M17 7V17"
+                                                }, void 0, false, {
+                                                    fileName: "src/Components/Blog.jsx",
+                                                    lineNumber: 132,
+                                                    columnNumber: 19
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/Components/Blog.jsx",
+                                                lineNumber: 123,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/Components/Blog.jsx",
+                                        lineNumber: 97,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/Blog.jsx",
+                                lineNumber: 75,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Components/Blog.jsx",
+                        lineNumber: 31,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
                     fileName: "src/Components/Blog.jsx",
-                    lineNumber: 23,
+                    lineNumber: 25,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Components/Blog.jsx",
-                lineNumber: 22,
+                lineNumber: 24,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {
@@ -34739,13 +34912,13 @@ const Blog = ()=>{
                 secondaryColor: secondaryColor
             }, void 0, false, {
                 fileName: "src/Components/Blog.jsx",
-                lineNumber: 28,
+                lineNumber: 139,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Blog.jsx",
-        lineNumber: 21,
+        lineNumber: 23,
         columnNumber: 5
     }, undefined);
 };
@@ -34759,7 +34932,7 @@ $RefreshReg$(_c, "Blog");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Footer":"7GWgX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7GWgX":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Footer":"7GWgX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./BlogCard":"aJ2ub","../data/blogData":"dGrZV"}],"7GWgX":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$8b43 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35773,7 +35946,458 @@ module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "twitte
 },{"./helpers/bundle-url":"lgJ39"}],"hmN7D":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "youtube.c3557793.svg" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"9Dt2F":[function(require,module,exports) {
+},{"./helpers/bundle-url":"lgJ39"}],"aJ2ub":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$38d2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$38d2.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+const BlogCard = ({ id , title , excerpt , date , readTime , mediumUrl , tags , coverImage  })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "blog-card",
+        style: {
+            backgroundColor: "white",
+            borderRadius: "12px",
+            padding: "1.5rem",
+            marginBottom: "2rem",
+            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+            transition: "transform 0.3s ease, box-shadow 0.3s ease",
+            border: "1px solid #e5e7eb"
+        },
+        onMouseEnter: (e)=>{
+            e.currentTarget.style.transform = "translateY(-4px)";
+            e.currentTarget.style.boxShadow = "0 8px 25px rgba(0, 0, 0, 0.15)";
+        },
+        onMouseLeave: (e)=>{
+            e.currentTarget.style.transform = "translateY(0)";
+            e.currentTarget.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.1)";
+        },
+        children: [
+            coverImage && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    marginBottom: "1rem"
+                },
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: coverImage,
+                    alt: title,
+                    style: {
+                        width: "100%",
+                        height: "200px",
+                        objectFit: "cover",
+                        borderRadius: "8px"
+                    }
+                }, void 0, false, {
+                    fileName: "src/Components/BlogCard.jsx",
+                    lineNumber: 26,
+                    columnNumber: 11
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/Components/BlogCard.jsx",
+                lineNumber: 25,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    marginBottom: "1rem"
+                },
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        style: {
+                            fontSize: "1.5rem",
+                            fontWeight: "600",
+                            color: "#1f2937",
+                            marginBottom: "0.5rem",
+                            lineHeight: "1.3"
+                        },
+                        children: title
+                    }, void 0, false, {
+                        fileName: "src/Components/BlogCard.jsx",
+                        lineNumber: 40,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        style: {
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "1rem",
+                            fontSize: "0.875rem",
+                            color: "#6b7280",
+                            marginBottom: "1rem"
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: date
+                            }, void 0, false, {
+                                fileName: "src/Components/BlogCard.jsx",
+                                lineNumber: 58,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: "•"
+                            }, void 0, false, {
+                                fileName: "src/Components/BlogCard.jsx",
+                                lineNumber: 59,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                children: readTime
+                            }, void 0, false, {
+                                fileName: "src/Components/BlogCard.jsx",
+                                lineNumber: 60,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Components/BlogCard.jsx",
+                        lineNumber: 50,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/BlogCard.jsx",
+                lineNumber: 39,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                style: {
+                    color: "#4b5563",
+                    lineHeight: "1.6",
+                    marginBottom: "1rem",
+                    fontSize: "1rem"
+                },
+                children: excerpt
+            }, void 0, false, {
+                fileName: "src/Components/BlogCard.jsx",
+                lineNumber: 64,
+                columnNumber: 7
+            }, undefined),
+            tags && tags.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    marginBottom: "1.5rem"
+                },
+                children: tags.map((tag, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        style: {
+                            display: "inline-block",
+                            backgroundColor: "#f3f4f6",
+                            color: "#374151",
+                            padding: "0.25rem 0.75rem",
+                            borderRadius: "9999px",
+                            fontSize: "0.75rem",
+                            marginRight: "0.5rem",
+                            marginBottom: "0.5rem"
+                        },
+                        children: tag
+                    }, index, false, {
+                        fileName: "src/Components/BlogCard.jsx",
+                        lineNumber: 76,
+                        columnNumber: 13
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/Components/BlogCard.jsx",
+                lineNumber: 74,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                style: {
+                    display: "flex",
+                    gap: "1rem",
+                    alignItems: "center"
+                },
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: `/blog/${id}`,
+                        style: {
+                            display: "inline-flex",
+                            alignItems: "center",
+                            padding: "0.75rem 1.5rem",
+                            backgroundColor: "#4E567E",
+                            color: "white",
+                            textDecoration: "none",
+                            borderRadius: "8px",
+                            fontSize: "0.875rem",
+                            fontWeight: "500",
+                            transition: "all 0.3s ease"
+                        },
+                        onMouseEnter: (e)=>{
+                            e.currentTarget.style.backgroundColor = "#3d4660";
+                            e.currentTarget.style.transform = "translateY(-1px)";
+                        },
+                        onMouseLeave: (e)=>{
+                            e.currentTarget.style.backgroundColor = "#4E567E";
+                            e.currentTarget.style.transform = "translateY(0)";
+                        },
+                        children: [
+                            "Read Article",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                width: "16",
+                                height: "16",
+                                viewBox: "0 0 24 24",
+                                fill: "none",
+                                stroke: "currentColor",
+                                strokeWidth: "2",
+                                style: {
+                                    marginLeft: "0.5rem"
+                                },
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                    d: "M9 18l6-6-6-6"
+                                }, void 0, false, {
+                                    fileName: "src/Components/BlogCard.jsx",
+                                    lineNumber: 129,
+                                    columnNumber: 13
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/Components/BlogCard.jsx",
+                                lineNumber: 120,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Components/BlogCard.jsx",
+                        lineNumber: 96,
+                        columnNumber: 9
+                    }, undefined),
+                    mediumUrl && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: mediumUrl,
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        style: {
+                            display: "inline-flex",
+                            alignItems: "center",
+                            padding: "0.75rem 1.5rem",
+                            backgroundColor: "transparent",
+                            color: "#4E567E",
+                            textDecoration: "none",
+                            border: "2px solid #4E567E",
+                            borderRadius: "8px",
+                            fontSize: "0.875rem",
+                            fontWeight: "500",
+                            transition: "all 0.3s ease"
+                        },
+                        onMouseEnter: (e)=>{
+                            e.currentTarget.style.backgroundColor = "#4E567E";
+                            e.currentTarget.style.color = "white";
+                        },
+                        onMouseLeave: (e)=>{
+                            e.currentTarget.style.backgroundColor = "transparent";
+                            e.currentTarget.style.color = "#4E567E";
+                        },
+                        children: [
+                            "Medium",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                width: "16",
+                                height: "16",
+                                viewBox: "0 0 24 24",
+                                fill: "none",
+                                stroke: "currentColor",
+                                strokeWidth: "2",
+                                style: {
+                                    marginLeft: "0.5rem"
+                                },
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                    d: "M7 17L17 7M17 7H7M17 7V17"
+                                }, void 0, false, {
+                                    fileName: "src/Components/BlogCard.jsx",
+                                    lineNumber: 170,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/Components/BlogCard.jsx",
+                                lineNumber: 161,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Components/BlogCard.jsx",
+                        lineNumber: 134,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/Components/BlogCard.jsx",
+                lineNumber: 95,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Components/BlogCard.jsx",
+        lineNumber: 6,
+        columnNumber: 5
+    }, undefined);
+};
+_c = BlogCard;
+exports.default = BlogCard;
+var _c;
+$RefreshReg$(_c, "BlogCard");
+
+  $parcel$ReactRefreshHelpers$38d2.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"dGrZV":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "blogPosts", ()=>blogPosts);
+const blogPosts = [
+    {
+        id: 1,
+        title: "How to install OpenCV on Ubuntu Server on Raspberry Pi 4",
+        excerpt: "To need Ubuntu server and to need OpenCV, I believe the basic concepts of flashing an Ubuntu image on a Raspberry Pi are no longer an issue, so let's save the stress.",
+        date: "March 15, 2024",
+        readTime: "8 min read",
+        mediumUrl: "https://medium.com/@samueladesola/how-to-install-opencv-on-ubuntu-server-on-raspberry-pi-4-629f3f03d575",
+        tags: [
+            "IoT",
+            "Embedded Systems",
+            "Technology",
+            "Raspberry Pi",
+            "OpenCV"
+        ],
+        coverImage: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*P0n7SOZBC6wQc7yj4e-Sfw.jpeg",
+        content: `
+        <p>To need Ubuntu server and to need OpenCV, I believe the basic concepts of flashing an Ubuntu image on a Raspberry Pi are no longer an issue, so let's save the stress of what you need to do to set up Ubuntu-supported, detected, libcamera interfaces, server.</p>
+  <p>If in any case you need guidance on setting up an Ubuntu server, Canonical has quite well-written up-to-date documentation on that, I believe I can even call it the official documentation, check it out here: <a href="https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview" target="_blank">Ubuntu Raspberry Pi Guide</a>.</p>
+
+  <h2>Some things you would need</h2>
+  <p>Getting the C++ build essentials is always a good thing to do while developing on Ubuntu. Make sure to install the packages using the command below.</p>
+  <pre><code>sudo apt install build-essential cmake git libgtk-3-dev libavcodec-dev libavformat-dev libswscale-dev</code></pre>
+
+  <h2>Grab the Package</h2>
+  <p>The OpenCV package can be grabbed with the command:</p>
+  <pre><code>sudo apt-get install python3-opencv</code></pre>
+
+  <h2>Test the package</h2>
+  <p>A quick check you can always run is to see if the package can be imported into Python. From the terminal, type <code>python</code> or <code>python3</code> to enter the Python interpreter, and then try:</p>
+  <pre><code>import cv2</code></pre>
+
+  <h2>Robust Test</h2>
+  <p>If you have a camera on the Pi, you can test with the code below:</p>
+  <pre><code>import cv2
+
+# Open the default camera (0 is usually the built-in webcam)
+cap = cv2.VideoCapture(0)
+
+# Check if the camera opened successfully
+if not cap.isOpened():
+    print("Error: Could not open camera.")
+    exit()
+
+print("Press 'q' to quit.")
+
+while True:
+    # Read a frame from the camera
+    ret, frame = cap.read()
+
+    if not ret:
+        print("Error: Failed to grab frame.")
+        break
+
+    # Display the frame
+    cv2.imshow("Webcam Test", frame)
+
+    # Exit if 'q' is pressed
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+
+# Release the camera and close windows
+cap.release()
+cv2.destroyAllWindows()</code></pre>
+
+  <p>If you have an image on the Raspberry Pi, you can test with:</p>
+  <pre><code>import cv2
+
+# Load an image
+image = cv2.imread('test_image.jpg')  # Make sure 'test_image.jpg' exists in the same folder
+
+# Check if image is loaded properly
+if image is None:
+    print("Failed to load image.")
+else:
+    print("Image loaded successfully.")
+
+    # Display the image
+    cv2.imshow('Test Image', image)
+
+    # Wait until a key is pressed
+    cv2.waitKey(0)
+
+    # Save a copy
+    cv2.imwrite('copy_of_test_image.jpg', image)
+
+    # Close the window
+    cv2.destroyAllWindows()</code></pre>
+    `
+    },
+    {
+        id: 2,
+        title: "Building Scalable Embedded Systems",
+        excerpt: "Explore advanced techniques for creating robust and scalable embedded systems. From architecture design to implementation strategies, this article covers everything you need to know.",
+        date: "February 28, 2024",
+        readTime: "12 min read",
+        mediumUrl: "https://medium.com/@samueladesola/your-article-url-2",
+        tags: [
+            "Embedded Systems",
+            "Software Architecture",
+            "Programming"
+        ],
+        coverImage: "https://via.placeholder.com/600x300/D2F1E4/4E567E?text=Embedded+Systems",
+        content: `
+      <p>Building scalable embedded systems requires careful consideration of architecture, resource management, and future growth requirements. In this comprehensive guide, we'll explore the key principles and strategies for creating embedded systems that can evolve with your needs.</p>
+
+      <h2>Understanding Scalability in Embedded Systems</h2>
+      <p>Scalability in embedded systems refers to the ability to handle increased loads, add new features, and support more devices without major architectural changes. This involves both horizontal scaling (adding more devices) and vertical scaling (improving individual device capabilities).</p>
+
+      <h2>Modular Architecture Design</h2>
+      <p>The foundation of any scalable embedded system is a well-designed modular architecture:</p>
+      <ul>
+        <li><strong>Layered Architecture:</strong> Separate hardware abstraction, middleware, and application layers</li>
+        <li><strong>Component-Based Design:</strong> Create reusable, interchangeable components</li>
+        <li><strong>Interface Standardization:</strong> Define clear APIs between modules</li>
+        <li><strong>Configuration Management:</strong> Use configuration files for easy customization</li>
+      </ul>
+
+      <p>By following these principles and continuously iterating on your design, you can create systems that grow with your needs and stand the test of time.</p>
+    `
+    },
+    {
+        id: 3,
+        title: "The Future of Smart Devices",
+        excerpt: "A deep dive into emerging trends in smart device technology and how they're shaping our connected world. Discover what's next in the IoT landscape.",
+        date: "January 20, 2024",
+        readTime: "6 min read",
+        mediumUrl: "https://medium.com/@samueladesola/your-article-url-3",
+        tags: [
+            "Smart Devices",
+            "Future Tech",
+            "Innovation"
+        ],
+        coverImage: "https://via.placeholder.com/600x300/6B7280/white?text=Smart+Devices",
+        content: `
+      <p>The landscape of smart devices is evolving at an unprecedented pace, with new technologies and innovations reshaping how we interact with our environment. From AI-powered assistants to edge computing capabilities, the future of smart devices promises to be more intelligent, efficient, and seamlessly integrated into our daily lives.</p>
+
+      <h2>AI at the Edge</h2>
+      <p>One of the most significant trends is the integration of artificial intelligence directly into smart devices. Edge AI enables:</p>
+      <ul>
+        <li>Real-time decision making without cloud dependency</li>
+        <li>Enhanced privacy by processing data locally</li>
+        <li>Reduced latency for time-critical applications</li>
+        <li>Lower bandwidth requirements and costs</li>
+      </ul>
+
+      <p>The future of smart devices is bright and full of possibilities. As these technologies mature and converge, we can expect to see devices that are not just smart, but truly intelligent partners in our daily lives.</p>
+    `
+    }
+]; // You can add more blog posts by following the same structure
+ // To add a new post, simply add a new object to the array above
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9Dt2F":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$2a62 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -36219,6 +36843,375 @@ $RefreshReg$(_c, "Portfolio");
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../images/portfoliopic.jpg":"i9Kl9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"i9Kl9":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "portfoliopic.4fe9df88.jpg" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"lW6qc":[function() {},{}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire6158")
+},{"./helpers/bundle-url":"lgJ39"}],"lW6qc":[function() {},{}],"h6Pqe":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1af0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$1af0.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _blogData = require("../data/blogData");
+var _footer = require("./Footer");
+var _footerDefault = parcelHelpers.interopDefault(_footer);
+var _s = $RefreshSig$();
+const siteProps = {
+    name: "Samuel Adesola",
+    title: "Embedded Systems and Internet of Things Engineer",
+    email: "samuel.adesola@studentambassadors.com",
+    gitHub: "adesolasamuel",
+    instagram: "adesola8011",
+    linkedIn: "samuel-adesola/",
+    medium: "samueladesola",
+    twitter: "AdesolaSamuel18",
+    youTube: "@RolesAcademy"
+};
+const primaryColor = "#4E567E";
+const secondaryColor = "#D2F1E4";
+const BlogPost = ()=>{
+    _s();
+    const { id  } = (0, _reactRouterDom.useParams)();
+    const post = (0, _blogData.blogPosts).find((p)=>p.id === parseInt(id));
+    if (!post) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        style: {
+            paddingTop: "6rem",
+            minHeight: "100vh",
+            textAlign: "center",
+            padding: "2rem"
+        },
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "Blog post not found"
+            }, void 0, false, {
+                fileName: "src/Components/BlogPost.jsx",
+                lineNumber: 28,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                to: "/blog",
+                style: {
+                    color: primaryColor
+                },
+                children: "← Back to Blog"
+            }, void 0, false, {
+                fileName: "src/Components/BlogPost.jsx",
+                lineNumber: 29,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Components/BlogPost.jsx",
+        lineNumber: 27,
+        columnNumber: 7
+    }, undefined);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        id: "main",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "content",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
+                    style: {
+                        paddingTop: "6rem",
+                        padding: "6rem 2rem 2rem",
+                        maxWidth: "800px",
+                        margin: "0 auto",
+                        lineHeight: "1.7"
+                    },
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/blog",
+                            style: {
+                                display: "inline-flex",
+                                alignItems: "center",
+                                color: primaryColor,
+                                textDecoration: "none",
+                                marginBottom: "2rem",
+                                fontSize: "1rem",
+                                transition: "color 0.3s ease"
+                            },
+                            onMouseEnter: (e)=>e.currentTarget.style.color = "#3d4660",
+                            onMouseLeave: (e)=>e.currentTarget.style.color = primaryColor,
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                    width: "20",
+                                    height: "20",
+                                    viewBox: "0 0 24 24",
+                                    fill: "none",
+                                    stroke: "currentColor",
+                                    strokeWidth: "2",
+                                    style: {
+                                        marginRight: "0.5rem"
+                                    },
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                        d: "M19 12H5M12 19l-7-7 7-7"
+                                    }, void 0, false, {
+                                        fileName: "src/Components/BlogPost.jsx",
+                                        lineNumber: 68,
+                                        columnNumber: 15
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/Components/BlogPost.jsx",
+                                    lineNumber: 59,
+                                    columnNumber: 13
+                                }, undefined),
+                                "Back to Blog"
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/Components/BlogPost.jsx",
+                            lineNumber: 45,
+                            columnNumber: 11
+                        }, undefined),
+                        post.coverImage && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            style: {
+                                marginBottom: "2rem"
+                            },
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                src: post.coverImage,
+                                alt: post.title,
+                                style: {
+                                    width: "100%",
+                                    height: "300px",
+                                    objectFit: "cover",
+                                    borderRadius: "12px"
+                                }
+                            }, void 0, false, {
+                                fileName: "src/Components/BlogPost.jsx",
+                                lineNumber: 76,
+                                columnNumber: 15
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/Components/BlogPost.jsx",
+                            lineNumber: 75,
+                            columnNumber: 13
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
+                            style: {
+                                marginBottom: "2rem"
+                            },
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                    style: {
+                                        fontSize: "2.5rem",
+                                        fontWeight: "700",
+                                        color: "#1f2937",
+                                        marginBottom: "1rem",
+                                        lineHeight: "1.2"
+                                    },
+                                    children: post.title
+                                }, void 0, false, {
+                                    fileName: "src/Components/BlogPost.jsx",
+                                    lineNumber: 91,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    style: {
+                                        display: "flex",
+                                        alignItems: "center",
+                                        gap: "1rem",
+                                        fontSize: "1rem",
+                                        color: "#6b7280",
+                                        marginBottom: "1rem"
+                                    },
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            children: post.date
+                                        }, void 0, false, {
+                                            fileName: "src/Components/BlogPost.jsx",
+                                            lineNumber: 109,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            children: "•"
+                                        }, void 0, false, {
+                                            fileName: "src/Components/BlogPost.jsx",
+                                            lineNumber: 110,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            children: post.readTime
+                                        }, void 0, false, {
+                                            fileName: "src/Components/BlogPost.jsx",
+                                            lineNumber: 111,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/Components/BlogPost.jsx",
+                                    lineNumber: 101,
+                                    columnNumber: 13
+                                }, undefined),
+                                post.tags && post.tags.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    style: {
+                                        marginBottom: "1.5rem"
+                                    },
+                                    children: post.tags.map((tag, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            style: {
+                                                display: "inline-block",
+                                                backgroundColor: "#f3f4f6",
+                                                color: "#374151",
+                                                padding: "0.5rem 1rem",
+                                                borderRadius: "9999px",
+                                                fontSize: "0.875rem",
+                                                marginRight: "0.75rem",
+                                                marginBottom: "0.5rem"
+                                            },
+                                            children: tag
+                                        }, index, false, {
+                                            fileName: "src/Components/BlogPost.jsx",
+                                            lineNumber: 118,
+                                            columnNumber: 19
+                                        }, undefined))
+                                }, void 0, false, {
+                                    fileName: "src/Components/BlogPost.jsx",
+                                    lineNumber: 116,
+                                    columnNumber: 15
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/Components/BlogPost.jsx",
+                            lineNumber: 90,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "blog-content",
+                            style: {
+                                fontSize: "1.125rem",
+                                color: "#374151",
+                                lineHeight: "1.8"
+                            },
+                            dangerouslySetInnerHTML: {
+                                __html: post.content
+                            }
+                        }, void 0, false, {
+                            fileName: "src/Components/BlogPost.jsx",
+                            lineNumber: 139,
+                            columnNumber: 11
+                        }, undefined),
+                        post.mediumUrl && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            style: {
+                                marginTop: "3rem",
+                                padding: "1.5rem",
+                                backgroundColor: "#f8fafc",
+                                borderRadius: "12px",
+                                textAlign: "center"
+                            },
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    style: {
+                                        marginBottom: "1rem",
+                                        color: "#6b7280"
+                                    },
+                                    children: "This article was originally published on Medium"
+                                }, void 0, false, {
+                                    fileName: "src/Components/BlogPost.jsx",
+                                    lineNumber: 158,
+                                    columnNumber: 15
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: post.mediumUrl,
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
+                                    style: {
+                                        display: "inline-flex",
+                                        alignItems: "center",
+                                        padding: "0.75rem 1.5rem",
+                                        backgroundColor: primaryColor,
+                                        color: "white",
+                                        textDecoration: "none",
+                                        borderRadius: "8px",
+                                        fontSize: "1rem",
+                                        fontWeight: "500",
+                                        transition: "all 0.3s ease"
+                                    },
+                                    onMouseEnter: (e)=>{
+                                        e.currentTarget.style.backgroundColor = "#3d4660";
+                                    },
+                                    onMouseLeave: (e)=>{
+                                        e.currentTarget.style.backgroundColor = primaryColor;
+                                    },
+                                    children: [
+                                        "Read on Medium",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                            width: "16",
+                                            height: "16",
+                                            viewBox: "0 0 24 24",
+                                            fill: "none",
+                                            stroke: "currentColor",
+                                            strokeWidth: "2",
+                                            style: {
+                                                marginLeft: "0.5rem"
+                                            },
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                d: "M7 17L17 7M17 7H7M17 7V17"
+                                            }, void 0, false, {
+                                                fileName: "src/Components/BlogPost.jsx",
+                                                lineNumber: 194,
+                                                columnNumber: 19
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/Components/BlogPost.jsx",
+                                            lineNumber: 185,
+                                            columnNumber: 17
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/Components/BlogPost.jsx",
+                                    lineNumber: 161,
+                                    columnNumber: 15
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/Components/BlogPost.jsx",
+                            lineNumber: 151,
+                            columnNumber: 13
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Components/BlogPost.jsx",
+                    lineNumber: 37,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/Components/BlogPost.jsx",
+                lineNumber: 36,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {
+                ...siteProps,
+                primaryColor: primaryColor,
+                secondaryColor: secondaryColor
+            }, void 0, false, {
+                fileName: "src/Components/BlogPost.jsx",
+                lineNumber: 201,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Components/BlogPost.jsx",
+        lineNumber: 35,
+        columnNumber: 5
+    }, undefined);
+};
+_s(BlogPost, "yQgCIz/jJfqV1l9s2yoba81MT5A=", false, function() {
+    return [
+        (0, _reactRouterDom.useParams)
+    ];
+});
+_c = BlogPost;
+exports.default = BlogPost;
+var _c;
+$RefreshReg$(_c, "BlogPost");
+
+  $parcel$ReactRefreshHelpers$1af0.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../data/blogData":"dGrZV","./Footer":"7GWgX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire6158")
 
 //# sourceMappingURL=index.975ef6c8.js.map
