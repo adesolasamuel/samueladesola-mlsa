@@ -27193,7 +27193,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./Components/About":"kouZu","./Components/Blog":"cCIoR","./Components/Footer":"7GWgX","./Components/Header":"9Dt2F","./Components/Home":"jIEVO","./Components/Portfolio":"lCaEt","./styles.css":"lW6qc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Components/BlogPost":"h6Pqe"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./Components/About":"kouZu","./Components/Blog":"cCIoR","./Components/BlogPost":"h6Pqe","./Components/Footer":"7GWgX","./Components/Header":"9Dt2F","./Components/Home":"jIEVO","./Components/Portfolio":"lCaEt","./styles.css":"lW6qc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "AbortedDeferredError", ()=>(0, _reactRouter.AbortedDeferredError));
@@ -34932,7 +34932,7 @@ $RefreshReg$(_c, "Blog");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Footer":"7GWgX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./BlogCard":"aJ2ub","../data/blogData":"dGrZV"}],"7GWgX":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Footer":"7GWgX","./BlogCard":"aJ2ub","../data/blogData":"dGrZV","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7GWgX":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$8b43 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -36241,7 +36241,7 @@ $RefreshReg$(_c, "BlogCard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"dGrZV":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dGrZV":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "blogPosts", ()=>blogPosts);
@@ -36397,7 +36397,376 @@ else:
 ]; // You can add more blog posts by following the same structure
  // To add a new post, simply add a new object to the array above
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9Dt2F":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"h6Pqe":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1af0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$1af0.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _blogData = require("../data/blogData");
+var _footer = require("./Footer");
+var _footerDefault = parcelHelpers.interopDefault(_footer);
+var _s = $RefreshSig$();
+const siteProps = {
+    name: "Samuel Adesola",
+    title: "Embedded Systems and Internet of Things Engineer",
+    email: "samuel.adesola@studentambassadors.com",
+    gitHub: "adesolasamuel",
+    instagram: "adesola8011",
+    linkedIn: "samuel-adesola/",
+    medium: "samueladesola",
+    twitter: "AdesolaSamuel18",
+    youTube: "@RolesAcademy"
+};
+const primaryColor = "#4E567E";
+const secondaryColor = "#D2F1E4";
+const BlogPost = ()=>{
+    _s();
+    const { id  } = (0, _reactRouterDom.useParams)();
+    const post = (0, _blogData.blogPosts).find((p)=>p.id === parseInt(id));
+    if (!post) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        style: {
+            paddingTop: "6rem",
+            minHeight: "100vh",
+            textAlign: "center",
+            padding: "2rem"
+        },
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "Blog post not found"
+            }, void 0, false, {
+                fileName: "src/Components/BlogPost.jsx",
+                lineNumber: 28,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                to: "/blog",
+                style: {
+                    color: primaryColor
+                },
+                children: "← Back to Blog"
+            }, void 0, false, {
+                fileName: "src/Components/BlogPost.jsx",
+                lineNumber: 29,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Components/BlogPost.jsx",
+        lineNumber: 27,
+        columnNumber: 7
+    }, undefined);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        id: "main",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "content",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
+                    style: {
+                        paddingTop: "6rem",
+                        padding: "6rem 2rem 2rem",
+                        maxWidth: "800px",
+                        margin: "0 auto",
+                        lineHeight: "1.7"
+                    },
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/blog",
+                            style: {
+                                display: "inline-flex",
+                                alignItems: "center",
+                                color: primaryColor,
+                                textDecoration: "none",
+                                marginBottom: "2rem",
+                                fontSize: "1rem",
+                                transition: "color 0.3s ease"
+                            },
+                            onMouseEnter: (e)=>e.currentTarget.style.color = "#3d4660",
+                            onMouseLeave: (e)=>e.currentTarget.style.color = primaryColor,
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                    width: "20",
+                                    height: "20",
+                                    viewBox: "0 0 24 24",
+                                    fill: "none",
+                                    stroke: "currentColor",
+                                    strokeWidth: "2",
+                                    style: {
+                                        marginRight: "0.5rem"
+                                    },
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                        d: "M19 12H5M12 19l-7-7 7-7"
+                                    }, void 0, false, {
+                                        fileName: "src/Components/BlogPost.jsx",
+                                        lineNumber: 68,
+                                        columnNumber: 15
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/Components/BlogPost.jsx",
+                                    lineNumber: 59,
+                                    columnNumber: 13
+                                }, undefined),
+                                "Back to Blog"
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/Components/BlogPost.jsx",
+                            lineNumber: 45,
+                            columnNumber: 11
+                        }, undefined),
+                        post.coverImage && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            style: {
+                                marginBottom: "2rem"
+                            },
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                src: post.coverImage,
+                                alt: post.title,
+                                style: {
+                                    width: "100%",
+                                    height: "300px",
+                                    objectFit: "cover",
+                                    borderRadius: "12px"
+                                }
+                            }, void 0, false, {
+                                fileName: "src/Components/BlogPost.jsx",
+                                lineNumber: 76,
+                                columnNumber: 15
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/Components/BlogPost.jsx",
+                            lineNumber: 75,
+                            columnNumber: 13
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
+                            style: {
+                                marginBottom: "2rem"
+                            },
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                    style: {
+                                        fontSize: "2.5rem",
+                                        fontWeight: "700",
+                                        color: "#1f2937",
+                                        marginBottom: "1rem",
+                                        lineHeight: "1.2"
+                                    },
+                                    children: post.title
+                                }, void 0, false, {
+                                    fileName: "src/Components/BlogPost.jsx",
+                                    lineNumber: 91,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    style: {
+                                        display: "flex",
+                                        alignItems: "center",
+                                        gap: "1rem",
+                                        fontSize: "1rem",
+                                        color: "#6b7280",
+                                        marginBottom: "1rem"
+                                    },
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            children: post.date
+                                        }, void 0, false, {
+                                            fileName: "src/Components/BlogPost.jsx",
+                                            lineNumber: 109,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            children: "•"
+                                        }, void 0, false, {
+                                            fileName: "src/Components/BlogPost.jsx",
+                                            lineNumber: 110,
+                                            columnNumber: 15
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            children: post.readTime
+                                        }, void 0, false, {
+                                            fileName: "src/Components/BlogPost.jsx",
+                                            lineNumber: 111,
+                                            columnNumber: 15
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/Components/BlogPost.jsx",
+                                    lineNumber: 101,
+                                    columnNumber: 13
+                                }, undefined),
+                                post.tags && post.tags.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    style: {
+                                        marginBottom: "1.5rem"
+                                    },
+                                    children: post.tags.map((tag, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            style: {
+                                                display: "inline-block",
+                                                backgroundColor: "#f3f4f6",
+                                                color: "#374151",
+                                                padding: "0.5rem 1rem",
+                                                borderRadius: "9999px",
+                                                fontSize: "0.875rem",
+                                                marginRight: "0.75rem",
+                                                marginBottom: "0.5rem"
+                                            },
+                                            children: tag
+                                        }, index, false, {
+                                            fileName: "src/Components/BlogPost.jsx",
+                                            lineNumber: 118,
+                                            columnNumber: 19
+                                        }, undefined))
+                                }, void 0, false, {
+                                    fileName: "src/Components/BlogPost.jsx",
+                                    lineNumber: 116,
+                                    columnNumber: 15
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/Components/BlogPost.jsx",
+                            lineNumber: 90,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "blog-content",
+                            style: {
+                                fontSize: "1.125rem",
+                                color: "#374151",
+                                lineHeight: "1.8"
+                            },
+                            dangerouslySetInnerHTML: {
+                                __html: post.content
+                            }
+                        }, void 0, false, {
+                            fileName: "src/Components/BlogPost.jsx",
+                            lineNumber: 139,
+                            columnNumber: 11
+                        }, undefined),
+                        post.mediumUrl && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            style: {
+                                marginTop: "3rem",
+                                padding: "1.5rem",
+                                backgroundColor: "#f8fafc",
+                                borderRadius: "12px",
+                                textAlign: "center"
+                            },
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    style: {
+                                        marginBottom: "1rem",
+                                        color: "#6b7280"
+                                    },
+                                    children: "This article was originally published on Medium"
+                                }, void 0, false, {
+                                    fileName: "src/Components/BlogPost.jsx",
+                                    lineNumber: 158,
+                                    columnNumber: 15
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: post.mediumUrl,
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
+                                    style: {
+                                        display: "inline-flex",
+                                        alignItems: "center",
+                                        padding: "0.75rem 1.5rem",
+                                        backgroundColor: primaryColor,
+                                        color: "white",
+                                        textDecoration: "none",
+                                        borderRadius: "8px",
+                                        fontSize: "1rem",
+                                        fontWeight: "500",
+                                        transition: "all 0.3s ease"
+                                    },
+                                    onMouseEnter: (e)=>{
+                                        e.currentTarget.style.backgroundColor = "#3d4660";
+                                    },
+                                    onMouseLeave: (e)=>{
+                                        e.currentTarget.style.backgroundColor = primaryColor;
+                                    },
+                                    children: [
+                                        "Read on Medium",
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                            width: "16",
+                                            height: "16",
+                                            viewBox: "0 0 24 24",
+                                            fill: "none",
+                                            stroke: "currentColor",
+                                            strokeWidth: "2",
+                                            style: {
+                                                marginLeft: "0.5rem"
+                                            },
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                d: "M7 17L17 7M17 7H7M17 7V17"
+                                            }, void 0, false, {
+                                                fileName: "src/Components/BlogPost.jsx",
+                                                lineNumber: 194,
+                                                columnNumber: 19
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/Components/BlogPost.jsx",
+                                            lineNumber: 185,
+                                            columnNumber: 17
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/Components/BlogPost.jsx",
+                                    lineNumber: 161,
+                                    columnNumber: 15
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/Components/BlogPost.jsx",
+                            lineNumber: 151,
+                            columnNumber: 13
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Components/BlogPost.jsx",
+                    lineNumber: 37,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/Components/BlogPost.jsx",
+                lineNumber: 36,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {
+                ...siteProps,
+                primaryColor: primaryColor,
+                secondaryColor: secondaryColor
+            }, void 0, false, {
+                fileName: "src/Components/BlogPost.jsx",
+                lineNumber: 201,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Components/BlogPost.jsx",
+        lineNumber: 35,
+        columnNumber: 5
+    }, undefined);
+};
+_s(BlogPost, "yQgCIz/jJfqV1l9s2yoba81MT5A=", false, function() {
+    return [
+        (0, _reactRouterDom.useParams)
+    ];
+});
+_c = BlogPost;
+exports.default = BlogPost;
+var _c;
+$RefreshReg$(_c, "BlogPost");
+
+  $parcel$ReactRefreshHelpers$1af0.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../data/blogData":"dGrZV","./Footer":"7GWgX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9Dt2F":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$2a62 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -36843,375 +37212,6 @@ $RefreshReg$(_c, "Portfolio");
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../images/portfoliopic.jpg":"i9Kl9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"i9Kl9":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "portfoliopic.4fe9df88.jpg" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"lW6qc":[function() {},{}],"h6Pqe":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$1af0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$1af0.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactRouterDom = require("react-router-dom");
-var _blogData = require("../data/blogData");
-var _footer = require("./Footer");
-var _footerDefault = parcelHelpers.interopDefault(_footer);
-var _s = $RefreshSig$();
-const siteProps = {
-    name: "Samuel Adesola",
-    title: "Embedded Systems and Internet of Things Engineer",
-    email: "samuel.adesola@studentambassadors.com",
-    gitHub: "adesolasamuel",
-    instagram: "adesola8011",
-    linkedIn: "samuel-adesola/",
-    medium: "samueladesola",
-    twitter: "AdesolaSamuel18",
-    youTube: "@RolesAcademy"
-};
-const primaryColor = "#4E567E";
-const secondaryColor = "#D2F1E4";
-const BlogPost = ()=>{
-    _s();
-    const { id  } = (0, _reactRouterDom.useParams)();
-    const post = (0, _blogData.blogPosts).find((p)=>p.id === parseInt(id));
-    if (!post) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        style: {
-            paddingTop: "6rem",
-            minHeight: "100vh",
-            textAlign: "center",
-            padding: "2rem"
-        },
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: "Blog post not found"
-            }, void 0, false, {
-                fileName: "src/Components/BlogPost.jsx",
-                lineNumber: 28,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                to: "/blog",
-                style: {
-                    color: primaryColor
-                },
-                children: "← Back to Blog"
-            }, void 0, false, {
-                fileName: "src/Components/BlogPost.jsx",
-                lineNumber: 29,
-                columnNumber: 9
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Components/BlogPost.jsx",
-        lineNumber: 27,
-        columnNumber: 7
-    }, undefined);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        id: "main",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "content",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("article", {
-                    style: {
-                        paddingTop: "6rem",
-                        padding: "6rem 2rem 2rem",
-                        maxWidth: "800px",
-                        margin: "0 auto",
-                        lineHeight: "1.7"
-                    },
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                            to: "/blog",
-                            style: {
-                                display: "inline-flex",
-                                alignItems: "center",
-                                color: primaryColor,
-                                textDecoration: "none",
-                                marginBottom: "2rem",
-                                fontSize: "1rem",
-                                transition: "color 0.3s ease"
-                            },
-                            onMouseEnter: (e)=>e.currentTarget.style.color = "#3d4660",
-                            onMouseLeave: (e)=>e.currentTarget.style.color = primaryColor,
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                    width: "20",
-                                    height: "20",
-                                    viewBox: "0 0 24 24",
-                                    fill: "none",
-                                    stroke: "currentColor",
-                                    strokeWidth: "2",
-                                    style: {
-                                        marginRight: "0.5rem"
-                                    },
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                        d: "M19 12H5M12 19l-7-7 7-7"
-                                    }, void 0, false, {
-                                        fileName: "src/Components/BlogPost.jsx",
-                                        lineNumber: 68,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/Components/BlogPost.jsx",
-                                    lineNumber: 59,
-                                    columnNumber: 13
-                                }, undefined),
-                                "Back to Blog"
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/Components/BlogPost.jsx",
-                            lineNumber: 45,
-                            columnNumber: 11
-                        }, undefined),
-                        post.coverImage && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            style: {
-                                marginBottom: "2rem"
-                            },
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                src: post.coverImage,
-                                alt: post.title,
-                                style: {
-                                    width: "100%",
-                                    height: "300px",
-                                    objectFit: "cover",
-                                    borderRadius: "12px"
-                                }
-                            }, void 0, false, {
-                                fileName: "src/Components/BlogPost.jsx",
-                                lineNumber: 76,
-                                columnNumber: 15
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/Components/BlogPost.jsx",
-                            lineNumber: 75,
-                            columnNumber: 13
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
-                            style: {
-                                marginBottom: "2rem"
-                            },
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                    style: {
-                                        fontSize: "2.5rem",
-                                        fontWeight: "700",
-                                        color: "#1f2937",
-                                        marginBottom: "1rem",
-                                        lineHeight: "1.2"
-                                    },
-                                    children: post.title
-                                }, void 0, false, {
-                                    fileName: "src/Components/BlogPost.jsx",
-                                    lineNumber: 91,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    style: {
-                                        display: "flex",
-                                        alignItems: "center",
-                                        gap: "1rem",
-                                        fontSize: "1rem",
-                                        color: "#6b7280",
-                                        marginBottom: "1rem"
-                                    },
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                            children: post.date
-                                        }, void 0, false, {
-                                            fileName: "src/Components/BlogPost.jsx",
-                                            lineNumber: 109,
-                                            columnNumber: 15
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                            children: "•"
-                                        }, void 0, false, {
-                                            fileName: "src/Components/BlogPost.jsx",
-                                            lineNumber: 110,
-                                            columnNumber: 15
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                            children: post.readTime
-                                        }, void 0, false, {
-                                            fileName: "src/Components/BlogPost.jsx",
-                                            lineNumber: 111,
-                                            columnNumber: 15
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/Components/BlogPost.jsx",
-                                    lineNumber: 101,
-                                    columnNumber: 13
-                                }, undefined),
-                                post.tags && post.tags.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    style: {
-                                        marginBottom: "1.5rem"
-                                    },
-                                    children: post.tags.map((tag, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                            style: {
-                                                display: "inline-block",
-                                                backgroundColor: "#f3f4f6",
-                                                color: "#374151",
-                                                padding: "0.5rem 1rem",
-                                                borderRadius: "9999px",
-                                                fontSize: "0.875rem",
-                                                marginRight: "0.75rem",
-                                                marginBottom: "0.5rem"
-                                            },
-                                            children: tag
-                                        }, index, false, {
-                                            fileName: "src/Components/BlogPost.jsx",
-                                            lineNumber: 118,
-                                            columnNumber: 19
-                                        }, undefined))
-                                }, void 0, false, {
-                                    fileName: "src/Components/BlogPost.jsx",
-                                    lineNumber: 116,
-                                    columnNumber: 15
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/Components/BlogPost.jsx",
-                            lineNumber: 90,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "blog-content",
-                            style: {
-                                fontSize: "1.125rem",
-                                color: "#374151",
-                                lineHeight: "1.8"
-                            },
-                            dangerouslySetInnerHTML: {
-                                __html: post.content
-                            }
-                        }, void 0, false, {
-                            fileName: "src/Components/BlogPost.jsx",
-                            lineNumber: 139,
-                            columnNumber: 11
-                        }, undefined),
-                        post.mediumUrl && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            style: {
-                                marginTop: "3rem",
-                                padding: "1.5rem",
-                                backgroundColor: "#f8fafc",
-                                borderRadius: "12px",
-                                textAlign: "center"
-                            },
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                    style: {
-                                        marginBottom: "1rem",
-                                        color: "#6b7280"
-                                    },
-                                    children: "This article was originally published on Medium"
-                                }, void 0, false, {
-                                    fileName: "src/Components/BlogPost.jsx",
-                                    lineNumber: 158,
-                                    columnNumber: 15
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    href: post.mediumUrl,
-                                    target: "_blank",
-                                    rel: "noopener noreferrer",
-                                    style: {
-                                        display: "inline-flex",
-                                        alignItems: "center",
-                                        padding: "0.75rem 1.5rem",
-                                        backgroundColor: primaryColor,
-                                        color: "white",
-                                        textDecoration: "none",
-                                        borderRadius: "8px",
-                                        fontSize: "1rem",
-                                        fontWeight: "500",
-                                        transition: "all 0.3s ease"
-                                    },
-                                    onMouseEnter: (e)=>{
-                                        e.currentTarget.style.backgroundColor = "#3d4660";
-                                    },
-                                    onMouseLeave: (e)=>{
-                                        e.currentTarget.style.backgroundColor = primaryColor;
-                                    },
-                                    children: [
-                                        "Read on Medium",
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                            width: "16",
-                                            height: "16",
-                                            viewBox: "0 0 24 24",
-                                            fill: "none",
-                                            stroke: "currentColor",
-                                            strokeWidth: "2",
-                                            style: {
-                                                marginLeft: "0.5rem"
-                                            },
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                                d: "M7 17L17 7M17 7H7M17 7V17"
-                                            }, void 0, false, {
-                                                fileName: "src/Components/BlogPost.jsx",
-                                                lineNumber: 194,
-                                                columnNumber: 19
-                                            }, undefined)
-                                        }, void 0, false, {
-                                            fileName: "src/Components/BlogPost.jsx",
-                                            lineNumber: 185,
-                                            columnNumber: 17
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/Components/BlogPost.jsx",
-                                    lineNumber: 161,
-                                    columnNumber: 15
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/Components/BlogPost.jsx",
-                            lineNumber: 151,
-                            columnNumber: 13
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Components/BlogPost.jsx",
-                    lineNumber: 37,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/Components/BlogPost.jsx",
-                lineNumber: 36,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {
-                ...siteProps,
-                primaryColor: primaryColor,
-                secondaryColor: secondaryColor
-            }, void 0, false, {
-                fileName: "src/Components/BlogPost.jsx",
-                lineNumber: 201,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Components/BlogPost.jsx",
-        lineNumber: 35,
-        columnNumber: 5
-    }, undefined);
-};
-_s(BlogPost, "yQgCIz/jJfqV1l9s2yoba81MT5A=", false, function() {
-    return [
-        (0, _reactRouterDom.useParams)
-    ];
-});
-_c = BlogPost;
-exports.default = BlogPost;
-var _c;
-$RefreshReg$(_c, "BlogPost");
-
-  $parcel$ReactRefreshHelpers$1af0.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../data/blogData":"dGrZV","./Footer":"7GWgX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire6158")
+},{"./helpers/bundle-url":"lgJ39"}],"lW6qc":[function() {},{}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire6158")
 
 //# sourceMappingURL=index.975ef6c8.js.map
