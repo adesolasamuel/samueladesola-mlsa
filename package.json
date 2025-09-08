@@ -7,7 +7,7 @@
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "build-gh": "parcel build --public-url 'https://adesolasamuel.github.io/samueladesola-mlsa'",
+    "build-gh": "parcel build src/index.html --public-url ./'",
     "predeploy": "npm run build-gh",
     "deploy": "gh-pages -d dist"
   },
