@@ -27093,8 +27093,8 @@ var _stylesCss = require("./styles.css");
  * If you don't have one of the social sites listed, leave it as an empty string.
  */ const siteProps = {
     name: "Samuel Adesola",
-    title: "Embedded Systems and Internet of Things Engineer",
-    email: "samuel.adesola@studentambassadors.com",
+    title: "Embedded Systems and Robotics Software Engineer",
+    email: "samueladesola2018@gmail.com",
     gitHub: "adesolasamuel",
     instagram: "adesola8011",
     linkedIn: "samuel-adesola/",
@@ -34414,7 +34414,7 @@ var _motionBackgroundJpgDefault = parcelHelpers.interopDefault(_motionBackground
 const imageAltText = "purple and blue abstract background";
 /**
  * Sort description that expands on your title on the Home component.
- */ const description = "I'm a Mechatronics and Systems Engineering Student at Abubakar Tafawa Balewa University. I am passioante about Embedded Systems and Internet of Things. I am also a Microsoft Learn Student Ambassador and a Microsoft Certified Trainer.";
+ */ const description = "I am a first class graduate of Mechatronics and Systems with a keen research interest in Vision Language Action (VLA) Models for general-purpose robotics.";
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
@@ -34423,7 +34423,7 @@ const imageAltText = "purple and blue abstract background";
     "Internet of Things",
     "Circuit Design",
     "Microcontrollers",
-    "Robotics Operating Systems (ROS)",
+    "Robotics Operating Systems (ROS2)",
     "C/C++",
     "Python",
     "Cloud Computing",
@@ -34699,8 +34699,8 @@ var _blogCardDefault = parcelHelpers.interopDefault(_blogCard);
 var _blogData = require("../data/blogData"); // Import blog data
 const siteProps = {
     name: "Samuel Adesola",
-    title: "Embedded Systems and Internet of Things Engineer",
-    email: "samuel.adesola@studentambassadors.com",
+    title: "Embedded Systems and Robotics Software Engineer",
+    email: "adesolasamuel2018@gmail.com",
     gitHub: "adesolasamuel",
     instagram: "adesola8011",
     linkedIn: "samuel-adesola/",
@@ -35958,8 +35958,7 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactRouterDom = require("react-router-dom");
-const BlogCard = ({ id , title , excerpt , date , readTime , mediumUrl , tags , coverImage  })=>{
+const BlogCard = ({ title , excerpt , date , readTime , mediumUrl , tags , coverImage  })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "blog-card",
         style: {
@@ -35995,12 +35994,12 @@ const BlogCard = ({ id , title , excerpt , date , readTime , mediumUrl , tags , 
                     }
                 }, void 0, false, {
                     fileName: "src/Components/BlogCard.jsx",
-                    lineNumber: 26,
+                    lineNumber: 25,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Components/BlogCard.jsx",
-                lineNumber: 25,
+                lineNumber: 24,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36019,7 +36018,7 @@ const BlogCard = ({ id , title , excerpt , date , readTime , mediumUrl , tags , 
                         children: title
                     }, void 0, false, {
                         fileName: "src/Components/BlogCard.jsx",
-                        lineNumber: 40,
+                        lineNumber: 39,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36036,33 +36035,33 @@ const BlogCard = ({ id , title , excerpt , date , readTime , mediumUrl , tags , 
                                 children: date
                             }, void 0, false, {
                                 fileName: "src/Components/BlogCard.jsx",
-                                lineNumber: 58,
+                                lineNumber: 57,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                 children: "•"
                             }, void 0, false, {
                                 fileName: "src/Components/BlogCard.jsx",
-                                lineNumber: 59,
+                                lineNumber: 58,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                 children: readTime
                             }, void 0, false, {
                                 fileName: "src/Components/BlogCard.jsx",
-                                lineNumber: 60,
+                                lineNumber: 59,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/BlogCard.jsx",
-                        lineNumber: 50,
+                        lineNumber: 49,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Components/BlogCard.jsx",
-                lineNumber: 39,
+                lineNumber: 38,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -36075,7 +36074,7 @@ const BlogCard = ({ id , title , excerpt , date , readTime , mediumUrl , tags , 
                 children: excerpt
             }, void 0, false, {
                 fileName: "src/Components/BlogCard.jsx",
-                lineNumber: 64,
+                lineNumber: 63,
                 columnNumber: 7
             }, undefined),
             tags && tags.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36096,12 +36095,12 @@ const BlogCard = ({ id , title , excerpt , date , readTime , mediumUrl , tags , 
                         children: tag
                     }, index, false, {
                         fileName: "src/Components/BlogCard.jsx",
-                        lineNumber: 76,
+                        lineNumber: 75,
                         columnNumber: 13
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/Components/BlogCard.jsx",
-                lineNumber: 74,
+                lineNumber: 73,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36110,124 +36109,69 @@ const BlogCard = ({ id , title , excerpt , date , readTime , mediumUrl , tags , 
                     gap: "1rem",
                     alignItems: "center"
                 },
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: `/blog/${id}`,
-                        style: {
-                            display: "inline-flex",
-                            alignItems: "center",
-                            padding: "0.75rem 1.5rem",
-                            backgroundColor: "#4E567E",
-                            color: "white",
-                            textDecoration: "none",
-                            borderRadius: "8px",
-                            fontSize: "0.875rem",
-                            fontWeight: "500",
-                            transition: "all 0.3s ease"
-                        },
-                        onMouseEnter: (e)=>{
-                            e.currentTarget.style.backgroundColor = "#3d4660";
-                            e.currentTarget.style.transform = "translateY(-1px)";
-                        },
-                        onMouseLeave: (e)=>{
-                            e.currentTarget.style.backgroundColor = "#4E567E";
-                            e.currentTarget.style.transform = "translateY(0)";
-                        },
-                        children: [
-                            "Read Article",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                width: "16",
-                                height: "16",
-                                viewBox: "0 0 24 24",
-                                fill: "none",
-                                stroke: "currentColor",
-                                strokeWidth: "2",
-                                style: {
-                                    marginLeft: "0.5rem"
-                                },
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                    d: "M9 18l6-6-6-6"
-                                }, void 0, false, {
-                                    fileName: "src/Components/BlogCard.jsx",
-                                    lineNumber: 129,
-                                    columnNumber: 13
-                                }, undefined)
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                    href: mediumUrl,
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    style: {
+                        display: "inline-flex",
+                        alignItems: "center",
+                        padding: "0.75rem 1.5rem",
+                        backgroundColor: "#4E567E",
+                        color: "white",
+                        textDecoration: "none",
+                        borderRadius: "8px",
+                        fontSize: "0.875rem",
+                        fontWeight: "500",
+                        transition: "all 0.3s ease"
+                    },
+                    onMouseEnter: (e)=>{
+                        e.currentTarget.style.backgroundColor = "#3d4660";
+                        e.currentTarget.style.transform = "translateY(-1px)";
+                    },
+                    onMouseLeave: (e)=>{
+                        e.currentTarget.style.backgroundColor = "#4E567E";
+                        e.currentTarget.style.transform = "translateY(0)";
+                    },
+                    children: [
+                        "Read on Medium",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                            width: "16",
+                            height: "16",
+                            viewBox: "0 0 24 24",
+                            fill: "none",
+                            stroke: "currentColor",
+                            strokeWidth: "2",
+                            style: {
+                                marginLeft: "0.5rem"
+                            },
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                d: "M7 17L17 7M17 7H7M17 7V17"
                             }, void 0, false, {
                                 fileName: "src/Components/BlogCard.jsx",
-                                lineNumber: 120,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Components/BlogCard.jsx",
-                        lineNumber: 96,
-                        columnNumber: 9
-                    }, undefined),
-                    mediumUrl && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: mediumUrl,
-                        target: "_blank",
-                        rel: "noopener noreferrer",
-                        style: {
-                            display: "inline-flex",
-                            alignItems: "center",
-                            padding: "0.75rem 1.5rem",
-                            backgroundColor: "transparent",
-                            color: "#4E567E",
-                            textDecoration: "none",
-                            border: "2px solid #4E567E",
-                            borderRadius: "8px",
-                            fontSize: "0.875rem",
-                            fontWeight: "500",
-                            transition: "all 0.3s ease"
-                        },
-                        onMouseEnter: (e)=>{
-                            e.currentTarget.style.backgroundColor = "#4E567E";
-                            e.currentTarget.style.color = "white";
-                        },
-                        onMouseLeave: (e)=>{
-                            e.currentTarget.style.backgroundColor = "transparent";
-                            e.currentTarget.style.color = "#4E567E";
-                        },
-                        children: [
-                            "Medium",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                width: "16",
-                                height: "16",
-                                viewBox: "0 0 24 24",
-                                fill: "none",
-                                stroke: "currentColor",
-                                strokeWidth: "2",
-                                style: {
-                                    marginLeft: "0.5rem"
-                                },
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                    d: "M7 17L17 7M17 7H7M17 7V17"
-                                }, void 0, false, {
-                                    fileName: "src/Components/BlogCard.jsx",
-                                    lineNumber: 170,
-                                    columnNumber: 15
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/Components/BlogCard.jsx",
-                                lineNumber: 161,
+                                lineNumber: 130,
                                 columnNumber: 13
                             }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/Components/BlogCard.jsx",
-                        lineNumber: 134,
-                        columnNumber: 11
-                    }, undefined)
-                ]
-            }, void 0, true, {
+                        }, void 0, false, {
+                            fileName: "src/Components/BlogCard.jsx",
+                            lineNumber: 121,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Components/BlogCard.jsx",
+                    lineNumber: 95,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
                 fileName: "src/Components/BlogCard.jsx",
-                lineNumber: 95,
+                lineNumber: 94,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/BlogCard.jsx",
-        lineNumber: 6,
+        lineNumber: 5,
         columnNumber: 5
     }, undefined);
 };
@@ -36241,161 +36185,160 @@ $RefreshReg$(_c, "BlogCard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dGrZV":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dGrZV":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "blogPosts", ()=>blogPosts);
 const blogPosts = [
     {
         id: 1,
-        title: "How to install OpenCV on Ubuntu Server on Raspberry Pi 4",
-        excerpt: "To need Ubuntu server and to need OpenCV, I believe the basic concepts of flashing an Ubuntu image on a Raspberry Pi are no longer an issue, so let's save the stress.",
-        date: "March 15, 2024",
-        readTime: "8 min read",
-        mediumUrl: "https://medium.com/@samueladesola/how-to-install-opencv-on-ubuntu-server-on-raspberry-pi-4-629f3f03d575",
+        title: "Read Ultrasonic Sensor on Raspberry Pi using ROS2, display the data on a Qt GUI window",
+        excerpt: "A very simple project — at least to see ROS2 in actual action. It can be a first step away from the simulation-based common ROS2 classes. In this guide, we will be reading an ultrasonic sensor connected to a Raspberry Pi using ROS2 and then sending the values to the development computer.",
+        date: "December 23, 2025",
+        readTime: "12 min read",
+        mediumUrl: "https://samueladesola.medium.com/read-ultrasonic-sensor-on-raspberry-pi-using-ros2-display-the-data-on-a-qt-gui-window-48099271720c",
         tags: [
-            "IoT",
-            "Embedded Systems",
-            "Technology",
-            "Raspberry Pi",
-            "OpenCV"
+            "ROS2",
+            "Python",
+            "C#",
+            "Qt",
+            "Robotics"
         ],
-        coverImage: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*P0n7SOZBC6wQc7yj4e-Sfw.jpeg",
-        content: `
-        <p>To need Ubuntu server and to need OpenCV, I believe the basic concepts of flashing an Ubuntu image on a Raspberry Pi are no longer an issue, so let's save the stress of what you need to do to set up Ubuntu-supported, detected, libcamera interfaces, server.</p>
-  <p>If in any case you need guidance on setting up an Ubuntu server, Canonical has quite well-written up-to-date documentation on that, I believe I can even call it the official documentation, check it out here: <a href="https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview" target="_blank">Ubuntu Raspberry Pi Guide</a>.</p>
-
-  <h2>Some things you would need</h2>
-  <p>Getting the C++ build essentials is always a good thing to do while developing on Ubuntu. Make sure to install the packages using the command below.</p>
-  <pre><code>sudo apt install build-essential cmake git libgtk-3-dev libavcodec-dev libavformat-dev libswscale-dev</code></pre>
-
-  <h2>Grab the Package</h2>
-  <p>The OpenCV package can be grabbed with the command:</p>
-  <pre><code>sudo apt-get install python3-opencv</code></pre>
-
-  <h2>Test the package</h2>
-  <p>A quick check you can always run is to see if the package can be imported into Python. From the terminal, type <code>python</code> or <code>python3</code> to enter the Python interpreter, and then try:</p>
-  <pre><code>import cv2</code></pre>
-
-  <h2>Robust Test</h2>
-  <p>If you have a camera on the Pi, you can test with the code below:</p>
-  <pre><code>import cv2
-
-# Open the default camera (0 is usually the built-in webcam)
-cap = cv2.VideoCapture(0)
-
-# Check if the camera opened successfully
-if not cap.isOpened():
-    print("Error: Could not open camera.")
-    exit()
-
-print("Press 'q' to quit.")
-
-while True:
-    # Read a frame from the camera
-    ret, frame = cap.read()
-
-    if not ret:
-        print("Error: Failed to grab frame.")
-        break
-
-    # Display the frame
-    cv2.imshow("Webcam Test", frame)
-
-    # Exit if 'q' is pressed
-    if cv2.waitKey(1) & 0xFF == ord('q'):
-        break
-
-# Release the camera and close windows
-cap.release()
-cv2.destroyAllWindows()</code></pre>
-
-  <p>If you have an image on the Raspberry Pi, you can test with:</p>
-  <pre><code>import cv2
-
-# Load an image
-image = cv2.imread('test_image.jpg')  # Make sure 'test_image.jpg' exists in the same folder
-
-# Check if image is loaded properly
-if image is None:
-    print("Failed to load image.")
-else:
-    print("Image loaded successfully.")
-
-    # Display the image
-    cv2.imshow('Test Image', image)
-
-    # Wait until a key is pressed
-    cv2.waitKey(0)
-
-    # Save a copy
-    cv2.imwrite('copy_of_test_image.jpg', image)
-
-    # Close the window
-    cv2.destroyAllWindows()</code></pre>
-    `
+        coverImage: "https://cdn-images-1.medium.com/max/1024/1*G5yvY73m9hAM4NqzomY3gw.jpeg"
     },
     {
         id: 2,
-        title: "Building Scalable Embedded Systems",
-        excerpt: "Explore advanced techniques for creating robust and scalable embedded systems. From architecture design to implementation strategies, this article covers everything you need to know.",
-        date: "February 28, 2024",
-        readTime: "12 min read",
-        mediumUrl: "https://medium.com/@samueladesola/your-article-url-2",
+        title: "Ubuntu Freezes While Running Blender Solved",
+        excerpt: "I was surprised when I started experiencing freezing while using Blender on Ubuntu 22.04. The freezing only occurs while in layout mode. Here's how I solved it by fixing the NVIDIA driver.",
+        date: "October 18, 2025",
+        readTime: "5 min read",
+        mediumUrl: "https://samueladesola.medium.com/ubuntu-freezes-while-running-blender-solved-3796ab87181e",
         tags: [
-            "Embedded Systems",
-            "Software Architecture",
-            "Programming"
+            "Blender",
+            "Ubuntu"
         ],
-        coverImage: "https://via.placeholder.com/600x300/D2F1E4/4E567E?text=Embedded+Systems",
-        content: `
-      <p>Building scalable embedded systems requires careful consideration of architecture, resource management, and future growth requirements. In this comprehensive guide, we'll explore the key principles and strategies for creating embedded systems that can evolve with your needs.</p>
-
-      <h2>Understanding Scalability in Embedded Systems</h2>
-      <p>Scalability in embedded systems refers to the ability to handle increased loads, add new features, and support more devices without major architectural changes. This involves both horizontal scaling (adding more devices) and vertical scaling (improving individual device capabilities).</p>
-
-      <h2>Modular Architecture Design</h2>
-      <p>The foundation of any scalable embedded system is a well-designed modular architecture:</p>
-      <ul>
-        <li><strong>Layered Architecture:</strong> Separate hardware abstraction, middleware, and application layers</li>
-        <li><strong>Component-Based Design:</strong> Create reusable, interchangeable components</li>
-        <li><strong>Interface Standardization:</strong> Define clear APIs between modules</li>
-        <li><strong>Configuration Management:</strong> Use configuration files for easy customization</li>
-      </ul>
-
-      <p>By following these principles and continuously iterating on your design, you can create systems that grow with your needs and stand the test of time.</p>
-    `
+        coverImage: "https://cdn-images-1.medium.com/max/1024/0*QSRApTNDc_aP8qrV"
     },
     {
         id: 3,
-        title: "The Future of Smart Devices",
-        excerpt: "A deep dive into emerging trends in smart device technology and how they're shaping our connected world. Discover what's next in the IoT landscape.",
-        date: "January 20, 2024",
-        readTime: "6 min read",
-        mediumUrl: "https://medium.com/@samueladesola/your-article-url-3",
+        title: "How to install OpenCV on Ubuntu Server on Raspberry Pi 4",
+        excerpt: "To need Ubuntu server and to need OpenCV, I believe the basic concepts of flashing an Ubuntu image on a Raspberry Pi are no longer an issue. Here's a quick guide to get OpenCV running on your Pi.",
+        date: "July 10, 2025",
+        readTime: "4 min read",
+        mediumUrl: "https://samueladesola.medium.com/how-to-install-opencv-on-ubuntu-server-on-raspberry-pi-4-629f3f03d575",
         tags: [
-            "Smart Devices",
-            "Future Tech",
-            "Innovation"
+            "Ubuntu Server",
+            "OpenCV",
+            "Raspberry Pi"
         ],
-        coverImage: "https://via.placeholder.com/600x300/6B7280/white?text=Smart+Devices",
-        content: `
-      <p>The landscape of smart devices is evolving at an unprecedented pace, with new technologies and innovations reshaping how we interact with our environment. From AI-powered assistants to edge computing capabilities, the future of smart devices promises to be more intelligent, efficient, and seamlessly integrated into our daily lives.</p>
-
-      <h2>AI at the Edge</h2>
-      <p>One of the most significant trends is the integration of artificial intelligence directly into smart devices. Edge AI enables:</p>
-      <ul>
-        <li>Real-time decision making without cloud dependency</li>
-        <li>Enhanced privacy by processing data locally</li>
-        <li>Reduced latency for time-critical applications</li>
-        <li>Lower bandwidth requirements and costs</li>
-      </ul>
-
-      <p>The future of smart devices is bright and full of possibilities. As these technologies mature and converge, we can expect to see devices that are not just smart, but truly intelligent partners in our daily lives.</p>
-    `
-    }
-]; // You can add more blog posts by following the same structure
- // To add a new post, simply add a new object to the array above
+        coverImage: "https://cdn-images-1.medium.com/max/1024/1*P0n7SOZBC6wQc7yj4e-Sfw.jpeg"
+    },
+    {
+        id: 4,
+        title: "A note about my internship journey",
+        excerpt: 'I guess we all believe that whenever you see the mail headline, "Thank you for…", we already know it is rejection. I think as of now, I\'ve seen almost all ways rejection emails can be crafted. Anyway, I know I just need to win once.',
+        date: "December 22, 2024",
+        readTime: "2 min read",
+        mediumUrl: "https://samueladesola.medium.com/a-note-about-my-internship-journey-7691cee153bf",
+        tags: [
+            "Internships"
+        ],
+        coverImage: "https://cdn-images-1.medium.com/max/1024/0*fLTUszsBKJlmSx6h"
+    },
+    {
+        id: 5,
+        title: "Object Classification on Arduino Nano 33 BLE Sense Using Teachable Machine",
+        excerpt: "I hope you haven't struggled a lot to get your model trained on Google Teachable Machine to be uploaded on Arduino Nano 33 BLE Sense. Everything will be well explained and solved in this guide, including the linker script error.",
+        date: "August 8, 2024",
+        readTime: "15 min read",
+        mediumUrl: "https://samueladesola.medium.com/object-classification-on-arduino-nano-33-ble-sense-using-teachable-machine-3ead7389000a",
+        tags: [
+            "Arduino",
+            "TensorFlow Lite",
+            "Machine Learning",
+            "TinyML",
+            "Teachable Machine"
+        ],
+        coverImage: "https://cdn-images-1.medium.com/max/1024/1*uKLEQSdqtL6KNS_EsOajvQ.png"
+    },
+    {
+        id: 6,
+        title: "How to control the P1 and P0 port pins of Arduino Nano 33 BLE Sense",
+        excerpt: "Traditional Arduino boards are laid out regarding the pin numbering, but when the Arduino Nano 33 BLE Sense came, a few things changed. Here's how to properly address GPIO pins on both Port 0 and Port 1.",
+        date: "May 23, 2024",
+        readTime: "5 min read",
+        mediumUrl: "https://samueladesola.medium.com/how-to-control-the-p1-and-p0-port-pins-of-arduino-nano-33-ble-sense-86d0b7002b97",
+        tags: [
+            "IoT",
+            "Arduino",
+            "GPIO",
+            "Electronics",
+            "TinyML"
+        ],
+        coverImage: "https://cdn-images-1.medium.com/max/742/1*uyHLPWf1oK_rfHNydGEL0g.png"
+    },
+    {
+        id: 7,
+        title: "Setting up Arduino Clone on Ubuntu Linux",
+        excerpt: "I was trying to build a robot car with ROS2 and needed a motor controller. I chose an Arduino Uno SMD clone, but it wouldn't work on Linux. Here's the surprisingly simple fix.",
+        date: "May 18, 2024",
+        readTime: "3 min read",
+        mediumUrl: "https://samueladesola.medium.com/setting-up-arduino-clone-on-ubuntu-linux-bca3feb061b1",
+        tags: [
+            "Ubuntu",
+            "Linux",
+            "Electronics",
+            "Clones",
+            "Arduino"
+        ],
+        coverImage: "https://cdn-images-1.medium.com/max/1024/1*VCZxyJ8CutS7OWFh0eiVhw.jpeg"
+    },
+    {
+        id: 8,
+        title: "How to set up ESP32-WROOM-32",
+        excerpt: "A quick guide on how to set up the ESP32-WROOM-32 board. We will set up the Arduino IDE, get the board installed, get the driver installed, and test it out.",
+        date: "December 16, 2023",
+        readTime: "6 min read",
+        mediumUrl: "https://samueladesola.medium.com/how-to-set-up-esp32-wroom-32-b2100060470c",
+        tags: [
+            "RTOS",
+            "Embedded Systems",
+            "Arduino",
+            "FreeRTOS",
+            "ESP32"
+        ],
+        coverImage: "https://cdn-images-1.medium.com/max/1024/1*nkTIzfJBRJLHK5U0FrXk8Q.jpeg"
+    },
+    {
+        id: 9,
+        title: "To Learn is to Know: Getting Started with Embedded Systems",
+        excerpt: "Among various fields in tech, embedded systems have always been a bone of contention, especially for beginners. With proper planning and information, getting started will be as seamless as possible.",
+        date: "August 1, 2023",
+        readTime: "8 min read",
+        mediumUrl: "https://samueladesola.medium.com/to-learn-is-to-know-getting-started-with-embedded-sytems-1d2127ad7839",
+        tags: [
+            "Getting Started",
+            "Embedded Systems",
+            "Tech"
+        ],
+        coverImage: "https://cdn-images-1.medium.com/max/1024/0*4OWaBf9On8c-oybn"
+    },
+    {
+        id: 10,
+        title: "Design Thinking in Embedded Systems",
+        excerpt: "One will surely be surprised when the topic of design thinking is raised in an Embedded Systems class. What differentiates the expert from the newcomers? It's the design thought that birthed the system.",
+        date: "July 22, 2023",
+        readTime: "6 min read",
+        mediumUrl: "https://samueladesola.medium.com/design-thinking-in-embedded-systems-5821dc8625fa",
+        tags: [
+            "Embedded Systems",
+            "Machine Learning",
+            "IoT",
+            "Hardware"
+        ],
+        coverImage: "https://cdn-images-1.medium.com/max/1024/0*Fj7X3eNq-b7KJGN7"
+    }, 
+];
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"h6Pqe":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$1af0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -37083,7 +37026,7 @@ const imageAltText = "desktop with books and laptop";
     {
         title: "My Academic Curriculum Vitae",
         description: "A detailed overview of my academic journey, including my education, research, and professional experiences.",
-        url: "https://drive.google.com/file/d/1HaK7cV91SwZETy35INwU56j8XENZZChi/view?usp=sharing"
+        url: "https://drive.google.com/file/d/1gPgfdYu4f8OxBGo1eHgWgiIsT6fo3gz0/view?usp=sharing"
     },
     {
         title: "Roles Academy Youtube Channel",
@@ -37093,10 +37036,10 @@ const imageAltText = "desktop with books and laptop";
     {
         title: "Download Resume",
         description: "Download a copy of my Resume.",
-        url: "https://samueladesolamlsa.blob.core.windows.net/mlstuffs/Samuel Adesola Resume.pdf"
+        url: "https://drive.google.com/file/d/1MHjITfEJMUII2n7ID_VGbZYj4NsJPaXz/view?usp=sharing"
     },
     {
-        title: "My hardware Projects Repository",
+        title: "My GitHub Repository",
         description: "Contains various work I have done on Electronics and TinyML.",
         url: "https://github.com/adesolasamuel"
     },
