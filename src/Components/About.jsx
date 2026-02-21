@@ -24,7 +24,7 @@ const imageAltText = "purple and blue abstract background";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I'm a Mechatronics and Systems Engineering Student at Abubakar Tafawa Balewa University. I am passioante about Embedded Systems and Internet of Things. I am also a Microsoft Learn Student Ambassador and a Microsoft Certified Trainer.";
+  "I am a first class graduate of Mechatronics and Systems with a keen research interest in Vision Language Action (VLA) Models for general-purpose robotics.";
 
 /**
  * List of some of skills or technologies you work on, are learning,
@@ -35,7 +35,7 @@ const skillsList = [
   "Internet of Things",
   "Circuit Design",
   "Microcontrollers",
-  "Robotics Operating Systems (ROS)",
+  "Robotics Operating Systems (ROS2)",
   "C/C++",
   "Python",
   "Cloud Computing",

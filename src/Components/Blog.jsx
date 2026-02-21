@@ -5,8 +5,8 @@ import { blogPosts } from "../data/blogData"; // Import blog data
 
 const siteProps = {
   name: "Samuel Adesola",
-  title: "Embedded Systems and Internet of Things Engineer",
-  email: "samuel.adesola@studentambassadors.com",
+  title: "Robotics Software Engineer",
+  email: "adesolasamuel2018@gmail.com",
   gitHub: "adesolasamuel",
   instagram: "adesola8011",
   linkedIn: "samuel-adesola/",
@@ -28,7 +28,7 @@ const Blog = () => {
           minHeight: "calc(100vh - 6rem)",
           backgroundColor: "#f8fafc"
         }}>
-          <div style={{ maxWidth: "900px", width: "100%", margin: "0 auto" }}>
+          <div style={{ maxWidth: "1300px", width: "100%", margin: "0 auto" }}>
             {/* Header Section */}
             <div style={{ textAlign: "center", marginBottom: "3rem" }}>
               <h2 style={{ 
@@ -51,10 +51,10 @@ const Blog = () => {
             </div>
 
             {/* Blog Posts Grid */}
-            <div style={{
+            <div className="blog-grid" style={{
               display: "grid",
-              gap: "2rem",
-              gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))"
+              gap: "1.5rem",
+              gridTemplateColumns: "repeat(4, 1fr)"
             }}>
               {blogPosts.map((post) => (
                 <BlogCard

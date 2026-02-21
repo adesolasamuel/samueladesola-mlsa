@@ -34,7 +34,7 @@ const projectList = [
     title: "My Academic Curriculum Vitae",
     description:
       "A detailed overview of my academic journey, including my education, research, and professional experiences.",
-    url: "https://drive.google.com/file/d/1HaK7cV91SwZETy35INwU56j8XENZZChi/view?usp=sharing",
+    url: "https://drive.google.com/file/d/1gPgfdYu4f8OxBGo1eHgWgiIsT6fo3gz0/view?usp=sharing",
   },
   {
     title: "Roles Academy Youtube Channel",
@@ -45,10 +45,10 @@ const projectList = [
   {
     title: "Download Resume",
     description: "Download a copy of my Resume.",
-    url: "https://samueladesolamlsa.blob.core.windows.net/mlstuffs/Samuel Adesola Resume.pdf",
+    url: "https://drive.google.com/file/d/1MHjITfEJMUII2n7ID_VGbZYj4NsJPaXz/view?usp=sharing",
   },
   {
-    title: "My hardware Projects Repository",
+    title: "My GitHub Repository",
     description: "Contains various work I have done on Electronics and TinyML.",
     url: "https://github.com/adesolasamuel",
   },

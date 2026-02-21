@@ -5,8 +5,8 @@ import Footer from "./Footer";
 
 const siteProps = {
   name: "Samuel Adesola",
-  title: "Embedded Systems and Internet of Things Engineer",
-  email: "samuel.adesola@studentambassadors.com",
+  title: "Robotics Software Engineer",
+  email: "samueladesola2018@gmail.com",
   gitHub: "adesolasamuel",
   instagram: "adesola8011",
   linkedIn: "samuel-adesola/",
