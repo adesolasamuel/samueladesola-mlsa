@@ -27082,6 +27082,10 @@ var _home = require("./Components/Home");
 var _homeDefault = parcelHelpers.interopDefault(_home);
 var _portfolio = require("./Components/Portfolio");
 var _portfolioDefault = parcelHelpers.interopDefault(_portfolio);
+var _projects = require("./Components/Projects");
+var _projectsDefault = parcelHelpers.interopDefault(_projects);
+var _publications = require("./Components/Publications");
+var _publicationsDefault = parcelHelpers.interopDefault(_publications);
 var _stylesCss = require("./styles.css");
 /**
  * This object represents your information. The project is set so that you
@@ -27111,7 +27115,7 @@ const App = ()=>{
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 48,
+                    lineNumber: 50,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27128,6 +27132,8 @@ const App = ()=>{
                                         }, void 0, false, void 0, void 0),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, void 0, void 0),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _portfolioDefault.default), {}, void 0, false, void 0, void 0),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _projectsDefault.default), {}, void 0, false, void 0, void 0),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _publicationsDefault.default), {}, void 0, false, void 0, void 0),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {
                                             ...siteProps,
                                             primaryColor: primaryColor,
@@ -27137,7 +27143,7 @@ const App = ()=>{
                                 }, void 0, true)
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 51,
+                                lineNumber: 53,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27149,7 +27155,7 @@ const App = ()=>{
                                 }, void 0, false, void 0, void 0)
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 66,
+                                lineNumber: 70,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27157,29 +27163,29 @@ const App = ()=>{
                                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _blogPostDefault.default), {}, void 0, false, void 0, void 0)
                             }, void 0, false, {
                                 fileName: "src/App.jsx",
-                                lineNumber: 76,
+                                lineNumber: 80,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/App.jsx",
-                        lineNumber: 50,
+                        lineNumber: 52,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/App.jsx",
-                    lineNumber: 49,
+                    lineNumber: 51,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/App.jsx",
-            lineNumber: 47,
+            lineNumber: 49,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.jsx",
-        lineNumber: 46,
+        lineNumber: 48,
         columnNumber: 5
     }, undefined);
 };
@@ -27193,7 +27199,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./Components/About":"kouZu","./Components/Blog":"cCIoR","./Components/BlogPost":"h6Pqe","./Components/Footer":"7GWgX","./Components/Header":"9Dt2F","./Components/Home":"jIEVO","./Components/Portfolio":"lCaEt","./styles.css":"lW6qc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./Components/About":"kouZu","./Components/Blog":"cCIoR","./Components/BlogPost":"h6Pqe","./Components/Footer":"7GWgX","./Components/Header":"9Dt2F","./Components/Home":"jIEVO","./Components/Portfolio":"lCaEt","./Components/Projects":"9mMqU","./Components/Publications":"55TOv","./styles.css":"lW6qc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "AbortedDeferredError", ()=>(0, _reactRouter.AbortedDeferredError));
@@ -36908,10 +36914,26 @@ const Header = ()=>{
                             }, undefined),
                             !isBlogPage && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                                 href: "#portfolio",
-                                children: "Portfolio"
+                                children: "Quick Links"
                             }, void 0, false, {
                                 fileName: "src/Components/Header.jsx",
                                 lineNumber: 23,
+                                columnNumber: 27
+                            }, undefined),
+                            !isBlogPage && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "#projects",
+                                children: "Selected Projects"
+                            }, void 0, false, {
+                                fileName: "src/Components/Header.jsx",
+                                lineNumber: 24,
+                                columnNumber: 27
+                            }, undefined),
+                            !isBlogPage && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: "#publications",
+                                children: "Publications"
+                            }, void 0, false, {
+                                fileName: "src/Components/Header.jsx",
+                                lineNumber: 25,
                                 columnNumber: 27
                             }, undefined),
                             !isBlogPage && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
@@ -36919,7 +36941,7 @@ const Header = ()=>{
                                 children: "Blog"
                             }, void 0, false, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 24,
+                                lineNumber: 26,
                                 columnNumber: 27
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -36927,7 +36949,7 @@ const Header = ()=>{
                                 children: "Contact"
                             }, void 0, false, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 25,
+                                lineNumber: 27,
                                 columnNumber: 11
                             }, undefined)
                         ]
@@ -36942,23 +36964,23 @@ const Header = ()=>{
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {}, void 0, false, {
                                 fileName: "src/Components/Header.jsx",
-                                lineNumber: 28,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {}, void 0, false, {
-                                fileName: "src/Components/Header.jsx",
-                                lineNumber: 29,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {}, void 0, false, {
-                                fileName: "src/Components/Header.jsx",
                                 lineNumber: 30,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {}, void 0, false, {
+                                fileName: "src/Components/Header.jsx",
+                                lineNumber: 31,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {}, void 0, false, {
+                                fileName: "src/Components/Header.jsx",
+                                lineNumber: 32,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/Header.jsx",
-                        lineNumber: 27,
+                        lineNumber: 29,
                         columnNumber: 9
                     }, undefined)
                 ]
@@ -37140,17 +37162,6 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
  */ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 /**
- * Desk image
- *
- * Below is a sample desk image. Feel free to update this to an image of your choice,
- * updating below imageAltText to string that represents what you see in that image.
- *
- * Need an image? Check out https://unsplash.com to download a photo you
- * freely use on your site.
- */ var _portfoliopicJpg = require("../images/portfoliopic.jpg");
-var _portfoliopicJpgDefault = parcelHelpers.interopDefault(_portfoliopicJpg);
-const imageAltText = "desktop with books and laptop";
-/**
  * Project list
  *
  * An array of objects that will be used to display for your project
@@ -37175,16 +37186,6 @@ const imageAltText = "desktop with books and laptop";
         title: "My GitHub Repository",
         description: "Contains various work I have done on Electronics and TinyML.",
         url: "https://github.com/adesolasamuel"
-    },
-    {
-        title: "Academic Publications",
-        description: "Contains various Papers I have presented and Researches I have done on Electronics and TinyML.",
-        url: "https://scholar.google.com/citations?hl=en&user=sruE6z8AAAAJ"
-    },
-    {
-        title: "My blogposts on IoT and Embedded Systems",
-        description: "Collection of various blogposts I have written on Internet of Things and Embedded Systems.",
-        url: "https://samueladesola.medium.com/"
     }, 
 ];
 const Portfolio = ()=>{
@@ -37196,82 +37197,59 @@ const Portfolio = ()=>{
                 style: {
                     textAlign: "center"
                 },
-                children: "Portfolio"
+                children: "Quick Links"
             }, void 0, false, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 72,
+                lineNumber: 47,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "portfolioWrapper",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: (0, _portfoliopicJpgDefault.default),
-                            alt: imageAltText
-                        }, void 0, false, {
-                            fileName: "src/Components/Portfolio.jsx",
-                            lineNumber: 75,
-                            columnNumber: 11
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 74,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "container",
-                        children: projectList.map((project)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "box",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                        href: project.url,
-                                        target: "_blank",
-                                        rel: "noopener noreferrer",
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                            style: {
-                                                flexBasis: "40px"
-                                            },
-                                            children: project.title
-                                        }, void 0, false, {
-                                            fileName: "src/Components/Portfolio.jsx",
-                                            lineNumber: 81,
-                                            columnNumber: 17
-                                        }, undefined)
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 80,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        className: "small",
-                                        children: project.description
-                                    }, void 0, false, {
-                                        fileName: "src/Components/Portfolio.jsx",
-                                        lineNumber: 83,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, project.title, true, {
+                className: "sectionGrid",
+                children: projectList.map((project)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "box",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: project.url,
+                                target: "_blank",
+                                rel: "noopener noreferrer",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                    style: {
+                                        flexBasis: "40px"
+                                    },
+                                    children: project.title
+                                }, void 0, false, {
+                                    fileName: "src/Components/Portfolio.jsx",
+                                    lineNumber: 52,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
                                 fileName: "src/Components/Portfolio.jsx",
-                                lineNumber: 79,
+                                lineNumber: 51,
                                 columnNumber: 13
-                            }, undefined))
-                    }, void 0, false, {
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "small",
+                                children: project.description
+                            }, void 0, false, {
+                                fileName: "src/Components/Portfolio.jsx",
+                                lineNumber: 54,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, project.title, true, {
                         fileName: "src/Components/Portfolio.jsx",
-                        lineNumber: 77,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
+                        lineNumber: 50,
+                        columnNumber: 11
+                    }, undefined))
+            }, void 0, false, {
                 fileName: "src/Components/Portfolio.jsx",
-                lineNumber: 73,
+                lineNumber: 48,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Portfolio.jsx",
-        lineNumber: 71,
+        lineNumber: 46,
         columnNumber: 5
     }, undefined);
 };
@@ -37285,9 +37263,314 @@ $RefreshReg$(_c, "Portfolio");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../images/portfoliopic.jpg":"i9Kl9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"i9Kl9":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "portfoliopic.4fe9df88.jpg" + "?" + Date.now();
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9mMqU":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$d0c8 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$d0c8.prelude(module);
 
-},{"./helpers/bundle-url":"lgJ39"}],"lW6qc":[function() {},{}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire6158")
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+/**
+ * Projects component
+ *
+ * Showcases technical projects with demo previews.
+ */ var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _perezDemoGif = require("../images/perez_demo.gif");
+var _perezDemoGifDefault = parcelHelpers.interopDefault(_perezDemoGif);
+const Projects = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        className: "padding",
+        id: "projects",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                style: {
+                    textAlign: "center"
+                },
+                children: "Selected Projects"
+            }, void 0, false, {
+                fileName: "src/Components/Projects.jsx",
+                lineNumber: 13,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                style: {
+                    textAlign: "center",
+                    marginBottom: "0.5rem"
+                },
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                    href: "https://github.com/adesolasamuel",
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    style: {
+                        color: "#4E567E",
+                        fontWeight: 600
+                    },
+                    children: "View more on GitHub →"
+                }, void 0, false, {
+                    fileName: "src/Components/Projects.jsx",
+                    lineNumber: 15,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/Components/Projects.jsx",
+                lineNumber: 14,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "projectShowcase",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "projectCard",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            href: "https://github.com/adesolasamuel/perez",
+                            target: "_blank",
+                            rel: "noopener noreferrer",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                src: (0, _perezDemoGifDefault.default),
+                                alt: "Perez ROS2 robot demo",
+                                className: "projectGif"
+                            }, void 0, false, {
+                                fileName: "src/Components/Projects.jsx",
+                                lineNumber: 31,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/Components/Projects.jsx",
+                            lineNumber: 26,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                            children: "Perez — ROS2 Four Wheel Differential Drive Robot"
+                        }, void 0, false, {
+                            fileName: "src/Components/Projects.jsx",
+                            lineNumber: 33,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "small",
+                            children: "A four-wheel differential drive robot built with ROS2, featuring autonomous navigation, sensor integration, and real-time control for robotics research and development."
+                        }, void 0, false, {
+                            fileName: "src/Components/Projects.jsx",
+                            lineNumber: 34,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Components/Projects.jsx",
+                    lineNumber: 25,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/Components/Projects.jsx",
+                lineNumber: 24,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Components/Projects.jsx",
+        lineNumber: 12,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Projects;
+exports.default = Projects;
+var _c;
+$RefreshReg$(_c, "Projects");
+
+  $parcel$ReactRefreshHelpers$d0c8.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../images/perez_demo.gif":"aktnt"}],"aktnt":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "perez_demo.1213753b.gif" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"55TOv":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1cea = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$1cea.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+/**
+ * Publications component
+ *
+ * Academic publications and scholarly contributions.
+ * Formatted in an academic citation style suitable for
+ * a PhD-ready research portfolio.
+ */ var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const publicationList = [
+    {
+        title: "Comparative Analysis of CNN ResNet and Vision Transformers for Plant Type and Disease Recognition for Generalist Farmland Robots",
+        authors: "S. D. Adesola, O. K. Ajayi, S. Du, F. S. Bala, D. Mbachu, O. M. Yusuf",
+        venue: "2024 IEEE 5th International Conference on Electro-Computing Technologies for Humanity (NIGERCON), pp. 1–4, IEEE, 2024.",
+        type: "Conference Paper",
+        url: "https://ieeexplore.ieee.org/document/10926843"
+    },
+    {
+        title: "Development of Vehicle Digital Image Model for Traffic Light Control Applications Using Machine Vision",
+        authors: "J. D. Jiya, A. A. Salihu, M. Aminu, S. D. Adesola",
+        venue: "International Journal of Research Publication and Reviews (IJRPR), Vol. 6, Issue 7, 2025.",
+        type: "Journal Article",
+        url: "https://ijrpr.com/uploads/V6ISSUE7/IJRPR50532.pdf"
+    },
+    {
+        title: "A Deep Learning Dataset for Groundnut Plant Arachis hypogaea",
+        authors: "S. D. Adesola, S. Odeh, J. Animashaun, O. Musawu",
+        venue: "Zenodo, August 2024. DOI: 10.5281/zenodo.13147130",
+        type: "Dataset",
+        url: "https://zenodo.org/records/13147130"
+    },
+    {
+        title: "A Deep Learning Dataset for Soy Beans Glycine max",
+        authors: "S. D. Adesola, J. Odeh, O. Animashaun, M. Syntiche",
+        venue: "Zenodo, July 2024. DOI: 10.5281/zenodo.12845109",
+        type: "Dataset",
+        url: "https://zenodo.org/records/12845109"
+    }, 
+];
+const Publications = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
+        className: "padding",
+        id: "publications",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                style: {
+                    textAlign: "center"
+                },
+                children: "Publications"
+            }, void 0, false, {
+                fileName: "src/Components/Publications.jsx",
+                lineNumber: 52,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                style: {
+                    textAlign: "center",
+                    marginBottom: "0.5rem"
+                },
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                    href: "https://scholar.google.com/citations?hl=en&user=sruE6z8AAAAJ",
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    style: {
+                        color: "#4E567E",
+                        fontWeight: 600
+                    },
+                    children: "View full profile on Google Scholar →"
+                }, void 0, false, {
+                    fileName: "src/Components/Publications.jsx",
+                    lineNumber: 54,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/Components/Publications.jsx",
+                lineNumber: 53,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "publicationsList",
+                children: publicationList.map((pub, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "publicationItem",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "pubNumber",
+                                children: [
+                                    "[",
+                                    index + 1,
+                                    "]"
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/Publications.jsx",
+                                lineNumber: 66,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "pubContent",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                        href: pub.url,
+                                        target: "_blank",
+                                        rel: "noopener noreferrer",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                            className: "pubTitle",
+                                            children: pub.title
+                                        }, void 0, false, {
+                                            fileName: "src/Components/Publications.jsx",
+                                            lineNumber: 69,
+                                            columnNumber: 17
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Publications.jsx",
+                                        lineNumber: 68,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "pubAuthors",
+                                        children: pub.authors
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Publications.jsx",
+                                        lineNumber: 71,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "pubVenue",
+                                        children: pub.venue
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Publications.jsx",
+                                        lineNumber: 72,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "pubType",
+                                        children: pub.type
+                                    }, void 0, false, {
+                                        fileName: "src/Components/Publications.jsx",
+                                        lineNumber: 73,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Components/Publications.jsx",
+                                lineNumber: 67,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, pub.title, true, {
+                        fileName: "src/Components/Publications.jsx",
+                        lineNumber: 65,
+                        columnNumber: 11
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/Components/Publications.jsx",
+                lineNumber: 63,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Components/Publications.jsx",
+        lineNumber: 51,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Publications;
+exports.default = Publications;
+var _c;
+$RefreshReg$(_c, "Publications");
+
+  $parcel$ReactRefreshHelpers$1cea.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lW6qc":[function() {},{}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire6158")
 
 //# sourceMappingURL=index.975ef6c8.js.map
