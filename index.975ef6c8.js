@@ -27093,7 +27093,7 @@ var _stylesCss = require("./styles.css");
  * If you don't have one of the social sites listed, leave it as an empty string.
  */ const siteProps = {
     name: "Samuel Adesola",
-    title: "Embedded Systems and Robotics Software Engineer",
+    title: "Robotics Software Engineer",
     email: "samueladesola2018@gmail.com",
     gitHub: "adesolasamuel",
     instagram: "adesola8011",
@@ -34699,7 +34699,7 @@ var _blogCardDefault = parcelHelpers.interopDefault(_blogCard);
 var _blogData = require("../data/blogData"); // Import blog data
 const siteProps = {
     name: "Samuel Adesola",
-    title: "Embedded Systems and Robotics Software Engineer",
+    title: "Robotics Software Engineer",
     email: "adesolasamuel2018@gmail.com",
     gitHub: "adesolasamuel",
     instagram: "adesola8011",
@@ -34727,7 +34727,7 @@ const Blog = ()=>{
                     },
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         style: {
-                            maxWidth: "900px",
+                            maxWidth: "1300px",
                             width: "100%",
                             margin: "0 auto"
                         },
@@ -34772,10 +34772,11 @@ const Blog = ()=>{
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "blog-grid",
                                 style: {
                                     display: "grid",
-                                    gap: "2rem",
-                                    gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))"
+                                    gap: "1.5rem",
+                                    gridTemplateColumns: "repeat(4, 1fr)"
                                 },
                                 children: (0, _blogData.blogPosts).map((post)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _blogCardDefault.default), {
                                         id: post.id,
@@ -35964,8 +35965,8 @@ const BlogCard = ({ title , excerpt , date , readTime , mediumUrl , tags , cover
         style: {
             backgroundColor: "white",
             borderRadius: "12px",
-            padding: "1.5rem",
-            marginBottom: "2rem",
+            padding: "1rem",
+            marginBottom: "0",
             boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
             transition: "transform 0.3s ease, box-shadow 0.3s ease",
             border: "1px solid #e5e7eb"
@@ -36009,11 +36010,15 @@ const BlogCard = ({ title , excerpt , date , readTime , mediumUrl , tags , cover
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                         style: {
-                            fontSize: "1.5rem",
+                            fontSize: "1rem",
                             fontWeight: "600",
                             color: "#1f2937",
                             marginBottom: "0.5rem",
-                            lineHeight: "1.3"
+                            lineHeight: "1.3",
+                            display: "-webkit-box",
+                            WebkitLineClamp: 2,
+                            WebkitBoxOrient: "vertical",
+                            overflow: "hidden"
                         },
                         children: title
                     }, void 0, false, {
@@ -36025,8 +36030,8 @@ const BlogCard = ({ title , excerpt , date , readTime , mediumUrl , tags , cover
                         style: {
                             display: "flex",
                             alignItems: "center",
-                            gap: "1rem",
-                            fontSize: "0.875rem",
+                            gap: "0.5rem",
+                            fontSize: "0.75rem",
                             color: "#6b7280",
                             marginBottom: "1rem"
                         },
@@ -36035,27 +36040,27 @@ const BlogCard = ({ title , excerpt , date , readTime , mediumUrl , tags , cover
                                 children: date
                             }, void 0, false, {
                                 fileName: "src/Components/BlogCard.jsx",
-                                lineNumber: 57,
+                                lineNumber: 61,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                 children: "•"
                             }, void 0, false, {
                                 fileName: "src/Components/BlogCard.jsx",
-                                lineNumber: 58,
+                                lineNumber: 62,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                 children: readTime
                             }, void 0, false, {
                                 fileName: "src/Components/BlogCard.jsx",
-                                lineNumber: 59,
+                                lineNumber: 63,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Components/BlogCard.jsx",
-                        lineNumber: 49,
+                        lineNumber: 53,
                         columnNumber: 9
                     }, undefined)
                 ]
@@ -36067,14 +36072,18 @@ const BlogCard = ({ title , excerpt , date , readTime , mediumUrl , tags , cover
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 style: {
                     color: "#4b5563",
-                    lineHeight: "1.6",
+                    lineHeight: "1.5",
                     marginBottom: "1rem",
-                    fontSize: "1rem"
+                    fontSize: "0.85rem",
+                    display: "-webkit-box",
+                    WebkitLineClamp: 3,
+                    WebkitBoxOrient: "vertical",
+                    overflow: "hidden"
                 },
                 children: excerpt
             }, void 0, false, {
                 fileName: "src/Components/BlogCard.jsx",
-                lineNumber: 63,
+                lineNumber: 67,
                 columnNumber: 7
             }, undefined),
             tags && tags.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36095,12 +36104,12 @@ const BlogCard = ({ title , excerpt , date , readTime , mediumUrl , tags , cover
                         children: tag
                     }, index, false, {
                         fileName: "src/Components/BlogCard.jsx",
-                        lineNumber: 75,
+                        lineNumber: 83,
                         columnNumber: 13
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/Components/BlogCard.jsx",
-                lineNumber: 73,
+                lineNumber: 81,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36116,7 +36125,7 @@ const BlogCard = ({ title , excerpt , date , readTime , mediumUrl , tags , cover
                     style: {
                         display: "inline-flex",
                         alignItems: "center",
-                        padding: "0.75rem 1.5rem",
+                        padding: "0.5rem 1rem",
                         backgroundColor: "#4E567E",
                         color: "white",
                         textDecoration: "none",
@@ -36149,23 +36158,23 @@ const BlogCard = ({ title , excerpt , date , readTime , mediumUrl , tags , cover
                                 d: "M7 17L17 7M17 7H7M17 7V17"
                             }, void 0, false, {
                                 fileName: "src/Components/BlogCard.jsx",
-                                lineNumber: 130,
+                                lineNumber: 138,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/Components/BlogCard.jsx",
-                            lineNumber: 121,
+                            lineNumber: 129,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/Components/BlogCard.jsx",
-                    lineNumber: 95,
+                    lineNumber: 103,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Components/BlogCard.jsx",
-                lineNumber: 94,
+                lineNumber: 102,
                 columnNumber: 7
             }, undefined)
         ]
@@ -36337,6 +36346,130 @@ const blogPosts = [
             "Hardware"
         ],
         coverImage: "https://cdn-images-1.medium.com/max/1024/0*Fj7X3eNq-b7KJGN7"
+    },
+    {
+        id: 11,
+        title: "How to send DHT data from Raspberry Pi to IBM cloud",
+        excerpt: "Detailed explanation on how to send DHT 11 data from Raspberry Pi to IBM Cloud Watson IoT Platform. In this tutorial, I will be taking you through steps in sending data from Raspberry Pi to the IBM Cloud IoT platform.",
+        date: "June 17, 2022",
+        readTime: "10 min read",
+        mediumUrl: "https://samueladesola.medium.com/how-to-send-dht-data-from-raspberry-pi-to-ibm-cloud-3c748e4dea63",
+        tags: [
+            "DHT11",
+            "IBM Watson",
+            "IBM Cloud",
+            "Raspberry Pi",
+            "IoT"
+        ],
+        coverImage: "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*63K2yXhadSFYEqXN"
+    },
+    {
+        id: 12,
+        title: "How to send data from ESP8266 to Qubitro using DHT11",
+        excerpt: "IoT being an integral part of cloud computing, several cloud vendors make IoT part of the services they render. In this tutorial, I will be taking you through the steps in sending data from ESP8266 to the Qubitro IoT platform using the MQTT protocol.",
+        date: "May 21, 2022",
+        readTime: "7 min read",
+        mediumUrl: "https://samueladesola.medium.com/how-to-send-data-from-esp8266-to-qubitro-using-dht11-e91fbc7b01a8",
+        tags: [
+            "IoT",
+            "Qubitro",
+            "DHT11",
+            "Internet Of Things",
+            "Weather Station"
+        ],
+        coverImage: "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*l2rSHEnD_KUFJccQ.png"
+    },
+    {
+        id: 13,
+        title: "How to send DHT data from ESP8266 to Arduino IoT Cloud",
+        excerpt: "In this tutorial, I will be taking you through the steps in sending data from NodeMCU, an IoT development platform to Arduino Cloud. We will be using DHT 11 sensor to send Temperature and Humidity data to Arduino Cloud.",
+        date: "April 2, 2022",
+        readTime: "7 min read",
+        mediumUrl: "https://samueladesola.medium.com/how-to-send-dht-data-from-esp8266-to-arduino-iot-cloud-de50af5ea325",
+        tags: [
+            "ESP8266",
+            "Arduino",
+            "DHT",
+            "Cloud",
+            "Arduino Cloud"
+        ],
+        coverImage: "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*Kpxi_OUI58fLvDOG.png"
+    },
+    {
+        id: 14,
+        title: "How to send DHT data from ESP8266 to Google Firebase",
+        excerpt: "In this tutorial, I will be taking you through the steps in sending data from NodeMCU, an IoT development platform to Google Firebase. We will be using DHT 11 sensor to send Temperature and Humidity data to Firebase Realtime Database.",
+        date: "April 2, 2022",
+        readTime: "6 min read",
+        mediumUrl: "https://samueladesola.medium.com/how-to-send-dht-data-from-esp8266-to-google-firebase-d733e20e1e95",
+        tags: [
+            "Firebase",
+            "ESP8266 NodeMCU",
+            "DHT11",
+            "IoT",
+            "How To"
+        ],
+        coverImage: "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*1rj6tfuFZz_HWobg.png"
+    },
+    {
+        id: 15,
+        title: "How to send data to Azure IoT Central using NodeMCU",
+        excerpt: "In this tutorial, I will be taking you through steps in sending data from NodeMCU, an IoT development platform to Azure IoT Central. We will be using DHT 11 sensor to send Temperature and Humidity data to Azure IoT Central.",
+        date: "January 1, 2022",
+        readTime: "6 min read",
+        mediumUrl: "https://samueladesola.medium.com/how-to-send-data-to-azure-iot-central-using-nodemcu-25c48d2e2f6c",
+        tags: [
+            "Azure IoT Central",
+            "DHT",
+            "NodeMCU",
+            "Data",
+            "IoT"
+        ],
+        coverImage: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*IuhwYNkNriyTIRrSgyI3kw.jpeg"
+    },
+    {
+        id: 16,
+        title: "Connecting your Cellphone to Microsoft Azure IoT Central",
+        excerpt: "The term 'Internet of Things' simply involves the integration of things to the internet. Today, I will be giving a detailed guide on how to connect your IoT device to the Microsoft Azure IoT platform, a service offered by Microsoft Azure cloud services.",
+        date: "December 29, 2021",
+        readTime: "5 min read",
+        mediumUrl: "https://samueladesola.medium.com/connecting-your-cellphone-to-microsoft-azure-iot-central-a956d76768bf",
+        tags: [
+            "Connect",
+            "Azure",
+            "Azure IoT Central",
+            "Mobile Phone",
+            "Cellphone"
+        ],
+        coverImage: "https://miro.medium.com/v2/resize:fit:1400/format:webp/0*TzHwNJk8p4ktCvl3"
+    },
+    {
+        id: 17,
+        title: "IoT in Africa: The Kenya Animals, The Poachers, and IoT",
+        excerpt: "There are over one million species of animals in Africa. Combating wildlife poaching and trafficking with IoT has brought about a great reduction in poaching. One implementation of IoT in preserving wildlife in Kenya is 'Smart', a spatial monitoring and reporting tool.",
+        date: "October 27, 2021",
+        readTime: "3 min read",
+        mediumUrl: "https://samueladesola.medium.com/iot-in-africa-the-kenya-animals-the-poachers-and-iot-3487f824484a",
+        tags: [
+            "IoT",
+            "Africa",
+            "Kenya",
+            "Poachers"
+        ],
+        coverImage: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*kAmSzWmvoqsEhRVm9wUo_g.jpeg"
+    },
+    {
+        id: 18,
+        title: "IoT in Africa: Where are we coming from? Where are we, and where we are going?",
+        excerpt: "The present and the future industrial revolution will be characterized by new technologies ranging from Artificial Intelligence, Machine Learning, and the Internet of Things (IoT). For a place like Africa, IoT can still be seen as an emerging technology because its power has not been fully tapped into.",
+        date: "October 25, 2021",
+        readTime: "2 min read",
+        mediumUrl: "https://samueladesola.medium.com/iot-in-africa-where-are-we-coming-from-where-are-we-and-where-we-are-going-978ffa27ac9b",
+        tags: [
+            "IoT",
+            "Africa"
+        ],
+        coverImage: "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*H19jTkQsbuPliHuVDb0dpg.png"
     }, 
 ];
 
@@ -36359,8 +36492,8 @@ var _footerDefault = parcelHelpers.interopDefault(_footer);
 var _s = $RefreshSig$();
 const siteProps = {
     name: "Samuel Adesola",
-    title: "Embedded Systems and Internet of Things Engineer",
-    email: "samuel.adesola@studentambassadors.com",
+    title: "Robotics Software Engineer",
+    email: "samueladesola2018@gmail.com",
     gitHub: "adesolasamuel",
     instagram: "adesola8011",
     linkedIn: "samuel-adesola/",
@@ -36909,7 +37042,7 @@ const Home = ({ name , title  })=>{
                     position: "absolute",
                     top: "6rem",
                     left: "2rem",
-                    width: "17rem"
+                    width: "22rem"
                 },
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
