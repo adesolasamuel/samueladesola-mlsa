@@ -14,6 +14,8 @@ import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Portfolio from "./Components/Portfolio";
+import Projects from "./Components/Projects";
+import Publications from "./Components/Publications";
 
 import "./styles.css";
 
@@ -55,6 +57,8 @@ const App = () => {
                   <Home name={siteProps.name} title={siteProps.title} />
                   <About />
                   <Portfolio />
+                  <Projects />
+                  <Publications />
                   <Footer
                     {...siteProps}
                     primaryColor={primaryColor}

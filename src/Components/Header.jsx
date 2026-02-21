@@ -20,7 +20,9 @@ const Header = () => {
         <div className="navLinks">
           <Link to="/">Home</Link>
           {!isBlogPage && <a href="#about">About</a>}
-          {!isBlogPage && <a href="#portfolio">Portfolio</a>}
+          {!isBlogPage && <a href="#portfolio">Quick Links</a>}
+          {!isBlogPage && <a href="#projects">Selected Projects</a>}
+          {!isBlogPage && <a href="#publications">Publications</a>}
           {!isBlogPage && <Link to="blog">Blog</Link>}
           <a href="#footer">Contact</a>
         </div>

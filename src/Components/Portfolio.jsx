@@ -11,19 +11,6 @@
 import React from "react";
 
 /**
- * Desk image
- *
- * Below is a sample desk image. Feel free to update this to an image of your choice,
- * updating below imageAltText to string that represents what you see in that image.
- *
- * Need an image? Check out https://unsplash.com to download a photo you
- * freely use on your site.
- */
-import image from "../images/portfoliopic.jpg";
-
-const imageAltText = "desktop with books and laptop";
-
-/**
  * Project list
  *
  * An array of objects that will be used to display for your project
@@ -52,38 +39,21 @@ const projectList = [
     description: "Contains various work I have done on Electronics and TinyML.",
     url: "https://github.com/adesolasamuel",
   },
-  {
-    title: "Academic Publications",
-    description:
-      "Contains various Papers I have presented and Researches I have done on Electronics and TinyML.",
-    url: "https://scholar.google.com/citations?hl=en&user=sruE6z8AAAAJ",
-  },
-  {
-    title: "My blogposts on IoT and Embedded Systems",
-    description:
-      "Collection of various blogposts I have written on Internet of Things and Embedded Systems.",
-    url: "https://samueladesola.medium.com/",
-  },
 ];
 
 const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
-      <h2 style={{ textAlign: "center" }}>Portfolio</h2>
-      <div className="portfolioWrapper">
-        <div>
-          <img src={image} alt={imageAltText} />
-        </div>
-        <div className="container">
-          {projectList.map((project) => (
-            <div className="box" key={project.title}>
-              <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
-              </a>
-              <p className="small">{project.description}</p>
-            </div>
-          ))}
-        </div>
+      <h2 style={{ textAlign: "center" }}>Quick Links</h2>
+      <div className="sectionGrid">
+        {projectList.map((project) => (
+          <div className="box" key={project.title}>
+            <a href={project.url} target="_blank" rel="noopener noreferrer">
+              <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
+            </a>
+            <p className="small">{project.description}</p>
+          </div>
+        ))}
       </div>
     </section>
   );
