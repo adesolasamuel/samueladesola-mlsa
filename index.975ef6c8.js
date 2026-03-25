@@ -37281,6 +37281,24 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _perezDemoGif = require("../images/perez_demo.gif");
 var _perezDemoGifDefault = parcelHelpers.interopDefault(_perezDemoGif);
+var _se3DemoGif = require("../images/SE3-Demo.gif");
+var _se3DemoGifDefault = parcelHelpers.interopDefault(_se3DemoGif);
+const projectList = [
+    {
+        title: "Perez - ROS2 Four Wheel Differential Drive Robot",
+        summary: "A four-wheel differential drive robot built with ROS2, featuring autonomous navigation, sensor integration, and real-time control for robotics research and development.",
+        url: "https://github.com/adesolasamuel/perez",
+        image: (0, _perezDemoGifDefault.default),
+        imageAlt: "Perez ROS2 robot demo"
+    },
+    {
+        title: "SE3 Robot Motions - Translation and Rotation",
+        summary: "A simulator for robot translation and Rotation in the Special Ortogonal Group SE(3)",
+        url: "https://github.com/adesolasamuel/Robot-Motion-SE-3-",
+        image: (0, _se3DemoGifDefault.default),
+        imageAlt: "SE3 robot motions demo"
+    }, 
+];
 const Projects = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("section", {
         className: "padding",
@@ -37293,7 +37311,7 @@ const Projects = ()=>{
                 children: "Selected Projects"
             }, void 0, false, {
                 fileName: "src/Components/Projects.jsx",
-                lineNumber: 13,
+                lineNumber: 33,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -37312,67 +37330,67 @@ const Projects = ()=>{
                     children: "View more on GitHub →"
                 }, void 0, false, {
                     fileName: "src/Components/Projects.jsx",
-                    lineNumber: 15,
+                    lineNumber: 35,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Components/Projects.jsx",
-                lineNumber: 14,
+                lineNumber: 34,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "projectShowcase",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "projectCard",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                            href: "https://github.com/adesolasamuel/perez",
-                            target: "_blank",
-                            rel: "noopener noreferrer",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                src: (0, _perezDemoGifDefault.default),
-                                alt: "Perez ROS2 robot demo",
-                                className: "projectGif"
+                children: projectList.map((project)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "projectCard",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                href: project.url,
+                                target: "_blank",
+                                rel: "noopener noreferrer",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: project.image,
+                                    alt: project.imageAlt,
+                                    className: "projectGif"
+                                }, void 0, false, {
+                                    fileName: "src/Components/Projects.jsx",
+                                    lineNumber: 48,
+                                    columnNumber: 15
+                                }, undefined)
                             }, void 0, false, {
                                 fileName: "src/Components/Projects.jsx",
-                                lineNumber: 31,
+                                lineNumber: 47,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                children: project.title
+                            }, void 0, false, {
+                                fileName: "src/Components/Projects.jsx",
+                                lineNumber: 50,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "small",
+                                children: project.summary
+                            }, void 0, false, {
+                                fileName: "src/Components/Projects.jsx",
+                                lineNumber: 51,
                                 columnNumber: 13
                             }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/Components/Projects.jsx",
-                            lineNumber: 26,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                            children: "Perez — ROS2 Four Wheel Differential Drive Robot"
-                        }, void 0, false, {
-                            fileName: "src/Components/Projects.jsx",
-                            lineNumber: 33,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            className: "small",
-                            children: "A four-wheel differential drive robot built with ROS2, featuring autonomous navigation, sensor integration, and real-time control for robotics research and development."
-                        }, void 0, false, {
-                            fileName: "src/Components/Projects.jsx",
-                            lineNumber: 34,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Components/Projects.jsx",
-                    lineNumber: 25,
-                    columnNumber: 9
-                }, undefined)
+                        ]
+                    }, project.title, true, {
+                        fileName: "src/Components/Projects.jsx",
+                        lineNumber: 46,
+                        columnNumber: 11
+                    }, undefined))
             }, void 0, false, {
                 fileName: "src/Components/Projects.jsx",
-                lineNumber: 24,
+                lineNumber: 44,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Components/Projects.jsx",
-        lineNumber: 12,
+        lineNumber: 32,
         columnNumber: 5
     }, undefined);
 };
@@ -37386,8 +37404,11 @@ $RefreshReg$(_c, "Projects");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../images/perez_demo.gif":"aktnt"}],"aktnt":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../images/perez_demo.gif":"aktnt","../images/SE3-Demo.gif":"g7ubG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aktnt":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "perez_demo.1213753b.gif" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"g7ubG":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("bLxZJ") + "SE3-Demo.b1901a08.gif" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"55TOv":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$1cea = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");

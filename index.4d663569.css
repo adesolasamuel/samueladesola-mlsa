@@ -279,10 +279,11 @@ a:hover {
 
 .projectShowcase {
   width: 90%;
-  max-width: 700px;
-  justify-content: center;
+  max-width: 1200px;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  gap: 1.25rem;
   margin: 2rem auto 0;
-  display: flex;
+  display: grid;
 }
 
 .projectCard {
@@ -311,6 +312,12 @@ a:hover {
 
 .projectCard p {
   padding: 0 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .projectShowcase {
+    grid-template-columns: 1fr;
+  }
 }
 
 img.socialIcon {
